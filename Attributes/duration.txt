@@ -1,0 +1,12 @@
+instant
+1h
+1m
+1r
+10d
+10m
+24h
+30d
+7d
+8h
+special
+dispelled
