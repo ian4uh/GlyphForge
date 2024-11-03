@@ -2,10 +2,13 @@ none
 acid
 bludgeoning
 cold
+magical
+extra
 fire
 force
 lightning
 necrotic
+nonmagical
 piercing
 poison
 psychic
