@@ -104,7 +104,7 @@ def draw_spell(level, rang, area, dtype, school, title=None,
                savename="output.png", legend=False,
                base_fn=bases.polygon, base_kwargs=[],
                shape_fn=line_shapes.straight, shape_kwargs=[],
-               colors=[], legend_loc="upper left", breakdown=False):
+               colors=[], legend_loc="upper left", breakdown=True):
     
     ranges = load_attribute("attributes/range.txt")
     levels = load_attribute("attributes/levels.txt")
