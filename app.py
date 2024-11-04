@@ -5,6 +5,8 @@ from io import BytesIO
 from PIL import Image, ImageTk
 import numpy as np
 import writer
+import bases
+import line_shapes
 
 class SpellApp:
     def __init__(self, master):
@@ -35,33 +37,49 @@ class SpellApp:
         self.area_var = tk.StringVar()
         self.dtype_var = tk.StringVar()
         self.school_var = tk.StringVar()
+        self.shape_var = tk.StringVar()
+        self.lineType_var = tk.StringVar()
+
+        # Create frames for organizing dropdowns
+        top_frame = ttk.Frame(self.master)
+        top_frame.pack()
+        bottom_frame = ttk.Frame(self.master)
+        bottom_frame.pack()
 
         # Level dropdown
-        ttk.Label(self.master, text="Select Level:").pack()
-        level_dropdown = ttk.Combobox(self.master, textvariable=self.level_var, values=self.levels)
-        level_dropdown.pack()
+        ttk.Label(top_frame, text="Select Level:").grid(row=0, column=0)
+        level_dropdown = ttk.Combobox(top_frame, textvariable=self.level_var, values=self.levels)
+        level_dropdown.grid(row=1, column=0, padx=5)
 
         # School dropdown
-        ttk.Label(self.master, text="Select School:").pack()
-        school_dropdown = ttk.Combobox(self.master, textvariable=self.school_var, values=self.schools)
-        school_dropdown.pack()
+        ttk.Label(top_frame, text="Select School:").grid(row=0, column=1)
+        school_dropdown = ttk.Combobox(top_frame, textvariable=self.school_var, values=self.schools)
+        school_dropdown.grid(row=1, column=1, padx=5)
 
         # Damage Type dropdown
-        ttk.Label(self.master, text="Select Damage Type:").pack()
-        dtype_dropdown = ttk.Combobox(self.master, textvariable=self.dtype_var, values=self.dtypes)
-        dtype_dropdown.pack()
+        ttk.Label(top_frame, text="Select Damage Type:").grid(row=0, column=2)
+        dtype_dropdown = ttk.Combobox(top_frame, textvariable=self.dtype_var, values=self.dtypes)
+        dtype_dropdown.grid(row=1, column=2, padx=5)
 
         # Area dropdown
-        ttk.Label(self.master, text="Select Area Type:").pack()
-        area_dropdown = ttk.Combobox(self.master, textvariable=self.area_var, values=self.areas)
-        area_dropdown.pack()
+        ttk.Label(top_frame, text="Select Area Type:").grid(row=0, column=3)
+        area_dropdown = ttk.Combobox(top_frame, textvariable=self.area_var, values=self.areas)
+        area_dropdown.grid(row=1, column=3, padx=5)
 
         # Range dropdown
-        ttk.Label(self.master, text="Select Range:").pack()
-        range_dropdown = ttk.Combobox(self.master, textvariable=self.range_var, values=self.ranges)
-        range_dropdown.pack()
-        
+        ttk.Label(top_frame, text="Select Range:").grid(row=0, column=4)
+        range_dropdown = ttk.Combobox(top_frame, textvariable=self.range_var, values=self.ranges)
+        range_dropdown.grid(row=1, column=4, padx=5)
 
+        # Shape Dropdown
+        ttk.Label(bottom_frame, text="Select Shape:").grid(row=0, column=0)
+        shape_dropdown = ttk.Combobox(bottom_frame, textvariable=self.shape_var, values=[bases.polygon, bases.line, bases.quadratic, bases.circle, bases.cubic, bases.golden])
+        shape_dropdown.grid(row=1, column=0, padx=5)
+
+        # Line Type Dropdown
+        ttk.Label(bottom_frame, text="Select Line Type:").grid(row=0, column=1)
+        lineType_dropdown = ttk.Combobox(bottom_frame, textvariable=self.lineType_var, values=[line_shapes.centre_circle, line_shapes.non_centre_circle, line_shapes.straight])
+        lineType_dropdown.grid(row=1, column=1, padx=5)
     def load_attributes(self, filename):
         with open(filename, "r") as f:
             return [line.strip() for line in f.readlines()]
@@ -72,6 +90,8 @@ class SpellApp:
         area = self.area_var.get()
         dtype = self.dtype_var.get()
         school = self.school_var.get()
+        shape = self.shape_var.get()
+        lineType = self.lineType_var.get()
 
         # Generate the spell image
         image = self.create_spell_image(level, rang, area, dtype, school)

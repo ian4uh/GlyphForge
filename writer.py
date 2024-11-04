@@ -100,7 +100,7 @@ def load_attribute(fname):
     data = [d.strip().lower() for d in data]
     return data
 
-def draw_spell(level, rang, area, dtype, school, title=None,
+def draw_spell(level, rang, area, dtype, school,
                savename="output.png", legend=False,
                base_fn=bases.polygon, base_kwargs=[],
                shape_fn=line_shapes.straight, shape_kwargs=[],
@@ -144,7 +144,6 @@ def draw_spell(level, rang, area, dtype, school, title=None,
                          shape_fn=shape_fn, shape_kwargs=shape_kwargs,
                          colors=colors, legend_loc=legend_loc)
     
-    plt.title(title, fontsize=30)
     
     if savename is not None:
         plt.savefig(savename, transparent=False, bbox_inches='tight')
