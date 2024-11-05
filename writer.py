@@ -112,13 +112,16 @@ def draw_spell(level, rang, area, dtype, school, duration, concentration, ritual
     schools = load_attribute("Attributes/school.txt")
     durations = load_attribute("Attributes/duration.txt")
     
+    
     # Find indices for the attributes
-    i_range = ranges.index(rang)
+    i_range = [r.lower() for r in ranges].index(rang.lower())
+    #i_levels = [l.lower() for l in levels].index(str(level))
     i_levels = levels.index(str(level))
-    i_area = area_types.index(area)
-    i_dtype = dtypes.index(dtype)
-    i_school = schools.index(school)
-    i_duration = durations.index(duration)
+    i_area = [a.lower() for a in area_types].index(area.lower())
+    i_dtype = [dt.lower() for dt in dtypes].index(dtype.lower())
+    i_school = [s.lower() for s in schools].index(school.lower())
+    i_duration = [d.lower() for d in durations].index(duration.lower())
+    
     attributes = [i_levels, i_school, i_dtype, i_area, i_range, i_duration]
     labels = [f"level: {level}",
               f"school: {school}",

@@ -19,7 +19,8 @@ class SpellApp:
         self.areas = self.load_attributes("attributes/area_types.txt")
         self.dtypes = self.load_attributes("attributes/damage_types.txt")
         self.schools = self.load_attributes("attributes/school.txt")
-        self.durations = self.load_attributes("attributes/duration.txt")
+        self.durations = [line.strip() for line in self.load_attributes("attributes/duration.txt")]
+
 
         # Create dropdowns
         self.create_dropdowns()
@@ -115,6 +116,9 @@ class SpellApp:
         ritual = self.ritual_var.get()
         shape = self.shape_var.get()
         lineType = self.lineType_var.get()
+
+
+        level = level.lower()
 
         if concentration=="Yes":
             concentration = True

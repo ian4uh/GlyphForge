@@ -1,4 +1,4 @@
-instant
+Instant
 1h
 1m
 1r
@@ -8,8 +8,8 @@ instant
 30d
 7d
 8h
-special
-dispelled
+Special
+Dispelled
 UpTo1h
 UpTo1m
 UpTo1r

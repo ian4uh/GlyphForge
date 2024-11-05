@@ -1,4 +1,4 @@
-none
+None
 1mi
 10ft
 100ft
@@ -11,8 +11,8 @@ none
 500mi
 60ft
 90ft
-self
-sight
-special
-touch
-unlimited
+Self
+Sight
+Special
+Touch
+Unlimited
