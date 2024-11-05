@@ -105,12 +105,12 @@ def draw_spell(level, rang, area, dtype, school, duration, concentration, ritual
                shape_fn=line_shapes.straight, shape_kwargs=[], colors=[], legend_loc="upper left", breakdown=True,
                base_dir=""):
     # Load attributes
-    ranges = load_attribute(base_dir + "Attributes/range.txt")
-    levels = load_attribute(base_dir + "Attributes/levels.txt")
-    area_types = load_attribute(base_dir + "Attributes/area_types.txt")
-    dtypes = load_attribute(base_dir + "Attributes/damage_types.txt")
-    schools = load_attribute(base_dir + "Attributes/school.txt")
-    durations = load_attribute(base_dir + "Attributes/duration.txt")
+    ranges = load_attribute("Attributes/range.txt")
+    levels = load_attribute("Attributes/levels.txt")
+    area_types = load_attribute("Attributes/area_types.txt")
+    dtypes = load_attribute("Attributes/damage_types.txt")
+    schools = load_attribute("Attributes/school.txt")
+    durations = load_attribute("Attributes/duration.txt")
     
     # Find indices for the attributes
     i_range = ranges.index(rang)
