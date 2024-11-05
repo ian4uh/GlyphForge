@@ -100,53 +100,63 @@ def load_attribute(fname):
     data = [d.strip().lower() for d in data]
     return data
 
-def draw_spell(level, rang, area, dtype, school,
-               savename="output.png", legend=False,
-               base_fn=bases.polygon, base_kwargs=[],
-               shape_fn=line_shapes.straight, shape_kwargs=[],
-               colors=[], legend_loc="upper left", breakdown=True):
+def draw_spell(level,rang,area,dtype,school,duration,concentration,ritual,
+               savename = "output.png",legend = False,
+                base_fn = bases.polygon,base_kwargs = [],
+                shape_fn = line_shapes.straight,shape_kwargs = [],
+                colors = [],legend_loc = "upper left",breakdown = False,
+                base_dir = ""):
     
-    ranges = load_attribute("attributes/range.txt")
-    levels = load_attribute("attributes/levels.txt")
-    area_types = load_attribute("attributes/area_types.txt")
-    dtypes = load_attribute("attributes/damage_types.txt")
-    schools = load_attribute("attributes/school.txt")
+    
+    
+    #draws a spell given certain values by comparing it to input txt
+    ranges = load_attribute(base_dir +"Attributes/range.txt")
+    levels = load_attribute(base_dir +"Attributes/levels.txt")
+    area_types = load_attribute(base_dir +"Attributes/area_types.txt")
+    dtypes = load_attribute(base_dir +"Attributes/damage_types.txt")
+    schools = load_attribute(base_dir +"Attributes/school.txt")
+    durations = load_attribute(base_dir +"Attributes/duration.txt")
     i_range = ranges.index(rang)
     i_levels = levels.index(str(level))
     i_area = area_types.index(area)
     i_dtype = dtypes.index(dtype)
     i_school = schools.index(school)
-    attributes = [i_levels, i_school, i_dtype, i_area, i_range]
+    i_duration = durations.index(duration)
+    attributes = [i_levels,i_school,i_dtype,i_area,i_range,i_duration]
     labels = [f"level: {level}",
               f"school: {school}",
               f"damage type: {dtype}",
               f"range: {rang}",
-              f"area type: {area}"]
-    N = 2 * len(attributes) + 1
+              f"area_type: {area}",
+              f'duration: {duration}']
+    N = 2*len(attributes)+1
     
-    if len(colors) == 0 and breakdown:
-        colors = [cmap(i / len(attributes)) for i in range(len(attributes))]
-    
-    if not os.path.isdir("Uniques/"):
-        os.makedirs("Uniques/")
-    
-    if os.path.isfile(f'Uniques/{N}.npy'):
-        non_repeating = np.load(f'Uniques/{N}.npy')
+    if len(colors) == 0 and breakdown == True:
+        colors = [cmap(i/len(attributes)) for i in range(len(attributes))]
+    if not os.path.isdir(base_dir +"Uniques/"):
+        os.makedirs(base_dir +"Uniques/")
+    if os.path.isfile(base_dir +f'Uniques/{N}.npy'):
+        non_repeating = np.load(base_dir +f'Uniques/{N}.npy')
     else:
         non_repeating = generate_unique_combinations(N)
         non_repeating = np.array(non_repeating)
-        np.save(f"Uniques/{N}.npy", non_repeating)
-
-    input_array = np.array([non_repeating[i] for i in attributes])
+        np.save(base_dir +f"Uniques/{N}.npy",non_repeating)
+    input_array = np.array([non_repeating[i] for i in attributes])#note +1 s.t. 0th option is always open for empty input
     
-    draw_multiple_inputs(input_array, labels=labels, legend=legend,
-                         base_fn=base_fn, base_kwargs=base_kwargs,
-                         shape_fn=shape_fn, shape_kwargs=shape_kwargs,
-                         colors=colors, legend_loc=legend_loc)
+    draw_multiple_inputs(input_array,labels = labels,legend = legend,
+                         base_fn = base_fn,base_kwargs = base_kwargs,
+                         shape_fn = shape_fn,shape_kwargs = shape_kwargs,
+                         colors = colors,legend_loc = legend_loc)
     
+    if concentration:
+        plt.plot(0,0,"",markersize = 10,marker = ".",color = colors)
+    if ritual:
+        
+        plt.plot(0,0,"",markersize = 10,marker = ".",color= colors)
+        plt.plot(0,0,"",markersize = 20,marker = "o",color=colors,mfc='none',linewidth = 10)
     
     if savename is not None:
-        plt.savefig(savename, transparent=False, bbox_inches='tight')
+        plt.savefig(savename,transparent = False, bbox_inches='tight')
         plt.clf()
     else:
         plt.show()

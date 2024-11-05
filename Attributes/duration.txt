@@ -10,3 +10,10 @@ instant
 8h
 special
 dispelled
+1hM
+1mM
+1rM
+10mM
+2hM
+24hM
+8hM

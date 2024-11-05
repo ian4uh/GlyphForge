@@ -19,6 +19,7 @@ class SpellApp:
         self.areas = self.load_attributes("attributes/area_types.txt")
         self.dtypes = self.load_attributes("attributes/damage_types.txt")
         self.schools = self.load_attributes("attributes/school.txt")
+        self.durations = self.load_attributes("attributes/duration.txt")
 
         # Create dropdowns
         self.create_dropdowns()
@@ -37,6 +38,9 @@ class SpellApp:
         self.area_var = tk.StringVar()
         self.dtype_var = tk.StringVar()
         self.school_var = tk.StringVar()
+        self.duration_var = tk.StringVar()
+        self.concentration_var = tk.StringVar()
+        self.ritual_var = tk.StringVar()
         self.shape_var = tk.StringVar()
         self.lineType_var = tk.StringVar()
 
@@ -71,15 +75,31 @@ class SpellApp:
         range_dropdown = ttk.Combobox(top_frame, textvariable=self.range_var, values=self.ranges)
         range_dropdown.grid(row=1, column=4, padx=5)
 
+        # Duration dropdown
+        ttk.Label(top_frame, text="Select Duration:").grid(row=0, column=5)
+        duration_dropdown = ttk.Combobox(top_frame, textvariable=self.duration_var, values=self.durations)
+        duration_dropdown.grid(row=1, column=5, padx=5)
+
+        # Concentration dropdown
+        ttk.Label(bottom_frame, text="Concentration:").grid(row=0, column=0)
+        concentration_dropdown = ttk.Combobox(bottom_frame, textvariable=self.concentration_var, values=["Yes", "No"])
+        concentration_dropdown.grid(row=1, column=0, padx=5)
+
+        # Ritual dropdown
+        ttk.Label(bottom_frame, text="Ritual:").grid(row=0, column=1)
+        ritual_dropdown = ttk.Combobox(bottom_frame, textvariable=self.ritual_var, values=["Yes", "No"])
+        ritual_dropdown.grid(row=1, column=1, padx=5)
+
         # Shape Dropdown
-        ttk.Label(bottom_frame, text="Select Shape:").grid(row=0, column=0)
+        ttk.Label(bottom_frame, text="Select Shape:").grid(row=0, column=2)
         shape_dropdown = ttk.Combobox(bottom_frame, textvariable=self.shape_var, values=[bases.polygon, bases.line, bases.quadratic, bases.circle, bases.cubic, bases.golden])
-        shape_dropdown.grid(row=1, column=0, padx=5)
+        shape_dropdown.grid(row=1, column=2, padx=5)
 
         # Line Type Dropdown
-        ttk.Label(bottom_frame, text="Select Line Type:").grid(row=0, column=1)
+        ttk.Label(bottom_frame, text="Select Line Type:").grid(row=0, column=3)
         lineType_dropdown = ttk.Combobox(bottom_frame, textvariable=self.lineType_var, values=[line_shapes.centre_circle, line_shapes.non_centre_circle, line_shapes.straight])
-        lineType_dropdown.grid(row=1, column=1, padx=5)
+        lineType_dropdown.grid(row=1, column=3, padx=5)
+        
     def load_attributes(self, filename):
         with open(filename, "r") as f:
             return [line.strip() for line in f.readlines()]
@@ -90,18 +110,31 @@ class SpellApp:
         area = self.area_var.get()
         dtype = self.dtype_var.get()
         school = self.school_var.get()
+        duration = self.duration_var.get()
+        concentration = self.concentration_var.get()
+        ritual = self.ritual_var.get()
         shape = self.shape_var.get()
         lineType = self.lineType_var.get()
 
+        if concentration=="Yes":
+            concentration = True
+        else:
+            concentration = False
+
+        if ritual=="Yes":
+                ritual = True
+        else:
+            ritual = False
+
         # Generate the spell image
-        image = self.create_spell_image(level, rang, area, dtype, school)
+        image = self.create_spell_image(level, rang, area, dtype, school,duration,concentration,ritual)
         
         # Display the image
         self.display_image(image)
 
-    def create_spell_image(self, level, rang, area, dtype, school):
+    def create_spell_image(self, level, rang, area, dtype, school, duration, concentration,ritual):
         buf = BytesIO()
-        writer.draw_spell(level, rang, area, dtype, school, savename=buf)
+        writer.draw_spell(level, rang, area, dtype, school, duration, concentration, ritual, savename=buf)
         buf.seek(0)
         return buf
 
