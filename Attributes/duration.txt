@@ -10,10 +10,10 @@ instant
 8h
 special
 dispelled
-1hM
-1mM
-1rM
-10mM
-2hM
-24hM
-8hM
+UpTo1h
+UpTo1m
+UpTo1r
+UpTo10m
+UpTo2h
+UpTo24h
+UpTo8h
