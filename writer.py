@@ -100,63 +100,83 @@ def load_attribute(fname):
     data = [d.strip().lower() for d in data]
     return data
 
-def draw_spell(level,rang,area,dtype,school,duration,concentration,ritual,
-               savename = "output.png",legend = False,
-                base_fn = bases.polygon,base_kwargs = [],
-                shape_fn = line_shapes.straight,shape_kwargs = [],
-                colors = [],legend_loc = "upper left",breakdown = False,
-                base_dir = ""):
+def draw_spell(level, rang, area, dtype, school, duration, concentration, ritual,
+               savename="output.png", legend=False, base_fn=bases.polygon, base_kwargs=[],
+               shape_fn=line_shapes.straight, shape_kwargs=[], colors=[], legend_loc="upper left", breakdown=True,
+               base_dir=""):
+    # Load attributes
+    ranges = load_attribute(base_dir + "Attributes/range.txt")
+    levels = load_attribute(base_dir + "Attributes/levels.txt")
+    area_types = load_attribute(base_dir + "Attributes/area_types.txt")
+    dtypes = load_attribute(base_dir + "Attributes/damage_types.txt")
+    schools = load_attribute(base_dir + "Attributes/school.txt")
+    durations = load_attribute(base_dir + "Attributes/duration.txt")
     
-    
-    
-    #draws a spell given certain values by comparing it to input txt
-    ranges = load_attribute(base_dir +"Attributes/range.txt")
-    levels = load_attribute(base_dir +"Attributes/levels.txt")
-    area_types = load_attribute(base_dir +"Attributes/area_types.txt")
-    dtypes = load_attribute(base_dir +"Attributes/damage_types.txt")
-    schools = load_attribute(base_dir +"Attributes/school.txt")
-    durations = load_attribute(base_dir +"Attributes/duration.txt")
+    # Find indices for the attributes
     i_range = ranges.index(rang)
     i_levels = levels.index(str(level))
     i_area = area_types.index(area)
     i_dtype = dtypes.index(dtype)
     i_school = schools.index(school)
     i_duration = durations.index(duration)
-    attributes = [i_levels,i_school,i_dtype,i_area,i_range,i_duration]
+    attributes = [i_levels, i_school, i_dtype, i_area, i_range, i_duration]
     labels = [f"level: {level}",
               f"school: {school}",
               f"damage type: {dtype}",
               f"range: {rang}",
               f"area_type: {area}",
               f'duration: {duration}']
-    N = 2*len(attributes)+1
+    N = 2 * len(attributes) + 1
     
-    if len(colors) == 0 and breakdown == True:
-        colors = [cmap(i/len(attributes)) for i in range(len(attributes))]
-    if not os.path.isdir(base_dir +"Uniques/"):
-        os.makedirs(base_dir +"Uniques/")
-    if os.path.isfile(base_dir +f'Uniques/{N}.npy'):
-        non_repeating = np.load(base_dir +f'Uniques/{N}.npy')
+    # Handle breakdown coloring
+    if breakdown:
+        if len(colors) == 0:  # If no colors provided, use a colormap
+            colors = [cmap(i / len(attributes)) for i in range(len(attributes))]
+        else:  # Use the provided colors
+            assert len(colors) == len(attributes), "The number of colors must match the number of attributes"
+    else:
+        # Handle missing colors by providing default ones
+        if len(colors) == 0:  # Check if colors is empty
+            colors = ['blue'] * N  # Default to a list of blue colors
+
+        # Ensure there are enough colors for all attributes and combinations
+        if len(colors) < N:
+            colors.extend(['red'] * (N - len(colors)))  # Add more colors if necessary
+
+    # Create output directory for unique combinations
+    if not os.path.isdir(base_dir + "Uniques/"):
+        os.makedirs(base_dir + "Uniques/")
+    
+    # Load or generate unique combinations
+    if os.path.isfile(base_dir + f'Uniques/{N}.npy'):
+        non_repeating = np.load(base_dir + f'Uniques/{N}.npy')
     else:
         non_repeating = generate_unique_combinations(N)
         non_repeating = np.array(non_repeating)
-        np.save(base_dir +f"Uniques/{N}.npy",non_repeating)
-    input_array = np.array([non_repeating[i] for i in attributes])#note +1 s.t. 0th option is always open for empty input
-    
-    draw_multiple_inputs(input_array,labels = labels,legend = legend,
-                         base_fn = base_fn,base_kwargs = base_kwargs,
-                         shape_fn = shape_fn,shape_kwargs = shape_kwargs,
-                         colors = colors,legend_loc = legend_loc)
-    
+        np.save(base_dir + f"Uniques/{N}.npy", non_repeating)
+
+    # Create the input array based on attributes
+    input_array = np.array([non_repeating[i] for i in attributes])
+
+    # Draw the multiple inputs
+    draw_multiple_inputs(input_array, labels=labels, legend=legend,
+                         base_fn=base_fn, base_kwargs=base_kwargs,
+                         shape_fn=shape_fn, shape_kwargs=shape_kwargs,
+                         colors=colors, legend_loc=legend_loc)
+
+    # Handle concentration and ritual markers
     if concentration:
-        plt.plot(0,0,"",markersize = 10,marker = ".",color = colors)
+        if len(colors) > 0:
+            plt.plot(0, 0, "", markersize=10, marker=".", color=colors[0])  # Use the first color
     if ritual:
-        
-        plt.plot(0,0,"",markersize = 10,marker = ".",color= colors)
-        plt.plot(0,0,"",markersize = 20,marker = "o",color=colors,mfc='none',linewidth = 10)
-    
+        if len(colors) > 1:  # Ensure there's at least one other color for ritual
+            plt.plot(0, 0, "", markersize=10, marker=".", color=colors[1])  # Use the second color
+        if len(colors) > 2:
+            plt.plot(0, 0, "", markersize=20, marker="o", color=colors[2], mfc='none', linewidth=10)
+
+    # Save or show the figure
     if savename is not None:
-        plt.savefig(savename,transparent = False, bbox_inches='tight')
+        plt.savefig(savename, transparent=False, bbox_inches='tight')
         plt.clf()
     else:
         plt.show()
