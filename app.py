@@ -117,6 +117,7 @@ class SpellApp:
         shape = self.shape_var.get()
         lineType = self.lineType_var.get()
 
+        # Set default inputs - had to do it this way cause the results get passed in anyway
         if level == '':
             level = "None"
         if rang == '':
