@@ -12,7 +12,7 @@ Generate the glyphs based off [Gorilla of Denstiny](https://github.com/GorillaOf
 - [X] Fix original code to allow for concentration and ritual attributes
 - [X] Allow users to select base shape
 - [X] Allow users to select line shape
-- [ ] Randomly generate glyphs
+- [X] Randomly generate glyphs
 
 # Possible Addition
 - [ ] Make a catalog of all spells and their attributes

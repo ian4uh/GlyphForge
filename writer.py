@@ -90,7 +90,31 @@ def draw_multiple_inputs(in_array,
                      shape_fn=shape_fn, shape_kwargs=shape_kwargs, label=labels[i], on_color=colors[i])
 
     if labels[0] is not None and legend:
-        plt.legend(loc=legend_loc, fontsize=10)
+        match base_fn:
+            case bases.polygon:
+                plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.7, 1.0))
+            case bases.quadratic:
+                plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.5, 1.0))
+                match shape_fn:
+                    case line_shapes.straight:
+                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-2, 1.0))
+                    case _:
+                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.5, 1.0))
+            case bases.circle:
+                    plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.5, 1.0))
+            case bases.cubic:
+                match shape_fn:
+                    case line_shapes.centre_circle:
+                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.7, 1.0))
+                    case line_shapes.straight:
+                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-2, 1.0))
+            case bases.golden:
+                match shape_fn:
+                    case line_shapes.centre_circle:
+                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.7, 1.0))
+                    case line_shapes.straight:
+                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-2, 1.0))
+        
     plt.axis('off')
     plt.axis('scaled')
 
@@ -102,7 +126,7 @@ def load_attribute(fname):
 
 def draw_spell(level, rang, area, dtype, school, duration, 
                concentration, ritual, base_fn, shape_fn,
-               savename="output.png", legend=False, base_kwargs=[],
+               savename="output.png", legend=True, base_kwargs=[],
                shape_kwargs=[], colors=[], legend_loc="upper left", breakdown=True,
                base_dir=""):
     # Load attributes
@@ -177,9 +201,9 @@ def draw_spell(level, rang, area, dtype, school, duration,
         if len(colors) > 2:
             plt.plot(0, 0, "", markersize=20, marker="o", color=colors[2], mfc='none', linewidth=10)
 
-    # Save or show the figure
-    if savename is not None:
-        plt.savefig(savename, transparent=False, bbox_inches='tight')
-        plt.clf()
-    else:
-        plt.show()
+
+
+
+    plt.savefig(savename, transparent=False, bbox_inches='tight')
+    plt.clf()
+

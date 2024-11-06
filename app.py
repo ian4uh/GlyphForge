@@ -7,6 +7,7 @@ import numpy as np
 import writer
 import bases
 import line_shapes
+import random
 
 class SpellApp:
     def __init__(self, master):
@@ -25,9 +26,17 @@ class SpellApp:
         # Create dropdowns
         self.create_dropdowns()
 
+        # Create frame for buttons
+        button_frame = ttk.Frame(master)
+        button_frame.pack()
+
         # Button to generate spell
-        self.generate_button = tk.Button(master, text="Generate Glyph", command=self.generate_spell)
-        self.generate_button.pack()
+        self.generate_button = tk.Button(button_frame, text="Generate Glyph", command=self.generate_spell)
+        self.generate_button.pack(side=tk.LEFT, padx=5)
+
+        # Button to randomly generate spell
+        self.random_button = tk.Button(button_frame, text="Random Spell", command=self.random_spell)
+        self.random_button.pack(side=tk.LEFT, padx=5)
 
         # Label to display the image
         self.image_label = tk.Label(master)
@@ -93,12 +102,12 @@ class SpellApp:
 
         # Shape Dropdown
         ttk.Label(bottom_frame, text="Select Shape:").grid(row=0, column=2)
-        shape_dropdown = ttk.Combobox(bottom_frame, textvariable=self.shape_var, values=["Polygon", "Line", "Quadratic", "Circle", "Cubic", "Golden"])
+        shape_dropdown = ttk.Combobox(bottom_frame, textvariable=self.shape_var, values=["Polygon", "Quadratic", "Circle", "Cubic", "Golden"])
         shape_dropdown.grid(row=1, column=2, padx=5)
 
         # Line Type Dropdown
         ttk.Label(bottom_frame, text="Select Line Type:").grid(row=0, column=3)
-        lineType_dropdown = ttk.Combobox(bottom_frame, textvariable=self.lineType_var, values=["Centre Circle", "Non-Centre Circle", "Straight"])
+        lineType_dropdown = ttk.Combobox(bottom_frame, textvariable=self.lineType_var, values=["Straight", "Centre Circle"])
         lineType_dropdown.grid(row=1, column=3, padx=5)
         
     def load_attributes(self, filename):
@@ -154,8 +163,6 @@ class SpellApp:
         match lineType:
             case "Centre Circle":
                 lineType = line_shapes.centre_circle
-            case "Non-Centre Circle":
-                lineType = line_shapes.non_centre_circle
             case "Straight":
                 lineType = line_shapes.straight
             case _:
@@ -181,6 +188,48 @@ class SpellApp:
         
         # Display the image
         self.display_image(image)
+
+    def random_spell(self):
+        # Generate a random spell
+        with open('attributes/levels.txt', 'r') as f:
+            levels = f.read().splitlines()
+        level = random.choice(levels)
+    
+        with open('attributes/range.txt', 'r') as f:
+            ranges = f.read().splitlines()
+        rang = random.choice(ranges)
+    
+        with open('attributes/area_types.txt', 'r') as f:
+            areas = f.read().splitlines()
+        area = random.choice(areas)
+    
+        with open('attributes/damage_types.txt', 'r') as f:
+            dtypes = f.read().splitlines()
+        dtype = random.choice(dtypes)
+    
+        with open('attributes/school.txt', 'r') as f:
+            schools = f.read().splitlines()
+        school = random.choice(schools)
+    
+        with open('attributes/duration.txt', 'r') as f:
+            durations = f.read().splitlines()
+        duration = random.choice(durations)
+
+        concentration = random.choice([True, False])
+        ritual = random.choice([True, False])
+        shape = random.choice([bases.polygon, bases.quadratic, bases.circle, bases.cubic, bases.golden])
+        lineType = random.choice([line_shapes.centre_circle, line_shapes.straight])
+
+        # Convert the level to lowercase in case of "None"
+        level = level.lower()
+
+
+        # Generate the spell image
+        image = self.create_spell_image(level, rang, area, dtype, school,duration,concentration, ritual, shape, lineType)
+        
+        # Display the image
+        self.display_image(image)
+
 
     def create_spell_image(self, level, rang, area, dtype, school, duration, concentration,ritual, shape, lineType):
         buf = BytesIO()

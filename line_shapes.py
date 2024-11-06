@@ -22,54 +22,55 @@ def centre_circle(P,Q,thetas = None):
     Y2 = r*np.sin(theta)+b
     return(X2,Y2)
 
-def non_centre_circle(P,Q,thetas = None):
-    #draws a connecting circle between two points with a centre defined by `b` away from the average. Always chooses the small arc.
-    x1 = P[0]
-    y1 = P[1]
-    x2 = Q[0]
-    y2 = Q[1]
+## COMMENTED THIS OUT BECAUSE IT'S NOT NEEDED IN THE CODE BUT DON'T WANT TO LOSE THE MATH
+# def non_centre_circle(P,Q,thetas = None):
+#     #draws a connecting circle between two points with a centre defined by `b` away from the average. Always chooses the small arc.
+#     x1 = P[0]
+#     y1 = P[1]
+#     x2 = Q[0]
+#     y2 = Q[1]
 
 
-    # Calculate the distance between points P and Q
-    distance = np.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+#     # Calculate the distance between points P and Q
+#     distance = np.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
-    # Randomize `b` within a reasonable range based on the distance between points P and Q
-    b = np.random.uniform(-0.1 * distance, 0.1 * distance)
-    b2 = -b  # Mirror of `b` for the alternate center
+#     # Randomize `b` within a reasonable range based on the distance between points P and Q
+#     b = np.random.uniform(-0.1 * distance, 0.1 * distance)
+#     b2 = -b  # Mirror of `b` for the alternate center
     
     
-    delta = x1**2 - x2**2 + y1**2 - y2**2
-    a = (delta-2*(y1 - y2)*b)/(2*(x1 - x2))
-    a2 = (delta-2*(y1 - y2)*b2)/(2*(x1 - x2))
-    r = np.sqrt((x1-a)**2 + (y1 - b)**2)
-    r2 = np.sqrt((x1-a2)**2 + (y1 - b2)**2)
-    if r2 <= r:
-        a = a2
-        b = b2
-        r = r2
+#     delta = x1**2 - x2**2 + y1**2 - y2**2
+#     a = (delta-2*(y1 - y2)*b)/(2*(x1 - x2))
+#     a2 = (delta-2*(y1 - y2)*b2)/(2*(x1 - x2))
+#     r = np.sqrt((x1-a)**2 + (y1 - b)**2)
+#     r2 = np.sqrt((x1-a2)**2 + (y1 - b2)**2)
+#     if r2 <= r:
+#         a = a2
+#         b = b2
+#         r = r2
 
-    if thetas == "Full":
-        theta1 = np.linspace( 0 , 2 * np.pi , 150 )
+#     if thetas == "Full":
+#         theta1 = np.linspace( 0 , 2 * np.pi , 150 )
  
-    else:
-        theta0 = math.atan2(y1-b, x1-a)
-        theta1 = math.atan2(y2-b, x2-a)
-        theta02 = theta0
-        theta12 = theta1
-        while theta1 < theta0:
-            theta0 -= 2*np.pi  
-        while theta02 < theta12:
-            theta12 -= 2*np.pi
-        arc1 = r*(theta1 - theta0)
-        arc2 = r*(theta02 - theta12)
-        if arc1 < arc2 or np.sqrt(b**2) <1:
-            theta = np.linspace(theta1,theta0,150)
-        else:
-            theta = np.linspace(theta02,theta12,150)
+#     else:
+#         theta0 = math.atan2(y1-b, x1-a)
+#         theta1 = math.atan2(y2-b, x2-a)
+#         theta02 = theta0
+#         theta12 = theta1
+#         while theta1 < theta0:
+#             theta0 -= 2*np.pi  
+#         while theta02 < theta12:
+#             theta12 -= 2*np.pi
+#         arc1 = r*(theta1 - theta0)
+#         arc2 = r*(theta02 - theta12)
+#         if arc1 < arc2 or np.sqrt(b**2) <1:
+#             theta = np.linspace(theta1,theta0,150)
+#         else:
+#             theta = np.linspace(theta02,theta12,150)
     
-    X = r*np.cos(theta)+a
-    Y = r*np.sin(theta)+b
-    return(X,Y)
+#     X = r*np.cos(theta)+a
+#     Y = r*np.sin(theta)+b
+#     return(X,Y)
 
 def straight(P,Q):
     #A straight line between two points
