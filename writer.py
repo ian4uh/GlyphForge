@@ -100,9 +100,10 @@ def load_attribute(fname):
     data = [d.strip().lower() for d in data]
     return data
 
-def draw_spell(level, rang, area, dtype, school, duration, concentration, ritual,
-               savename="output.png", legend=False, base_fn=bases.polygon, base_kwargs=[],
-               shape_fn=line_shapes.straight, shape_kwargs=[], colors=[], legend_loc="upper left", breakdown=True,
+def draw_spell(level, rang, area, dtype, school, duration, 
+               concentration, ritual, base_fn, shape_fn,
+               savename="output.png", legend=False, base_kwargs=[],
+               shape_kwargs=[], colors=[], legend_loc="upper left", breakdown=True,
                base_dir=""):
     # Load attributes
     ranges = load_attribute("Attributes/range.txt")
@@ -113,9 +114,8 @@ def draw_spell(level, rang, area, dtype, school, duration, concentration, ritual
     durations = load_attribute("Attributes/duration.txt")
     
     
-    # Find indices for the attributes
+    # Find indices for the attributes and uses lowercases values
     i_range = [r.lower() for r in ranges].index(rang.lower())
-    #i_levels = [l.lower() for l in levels].index(str(level))
     i_levels = levels.index(str(level))
     i_area = [a.lower() for a in area_types].index(area.lower())
     i_dtype = [dt.lower() for dt in dtypes].index(dtype.lower())
@@ -162,10 +162,10 @@ def draw_spell(level, rang, area, dtype, school, duration, concentration, ritual
     input_array = np.array([non_repeating[i] for i in attributes])
 
     # Draw the multiple inputs
-    draw_multiple_inputs(input_array, labels=labels, legend=legend,
-                         base_fn=base_fn, base_kwargs=base_kwargs,
-                         shape_fn=shape_fn, shape_kwargs=shape_kwargs,
-                         colors=colors, legend_loc=legend_loc)
+    draw_multiple_inputs(input_array, base_fn=base_fn, labels=labels, legend=legend,
+                        base_kwargs=base_kwargs,
+                        shape_fn=shape_fn, shape_kwargs=shape_kwargs,
+                        colors=colors, legend_loc=legend_loc)
 
     # Handle concentration and ritual markers
     if concentration:

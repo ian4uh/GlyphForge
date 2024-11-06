@@ -22,13 +22,22 @@ def centre_circle(P,Q,thetas = None):
     Y2 = r*np.sin(theta)+b
     return(X2,Y2)
 
-def non_centre_circle(P,Q,b,thetas = None):
+def non_centre_circle(P,Q,thetas = None):
     #draws a connecting circle between two points with a centre defined by `b` away from the average. Always chooses the small arc.
     x1 = P[0]
     y1 = P[1]
     x2 = Q[0]
     y2 = Q[1]
-    b2 = -b
+
+
+    # Calculate the distance between points P and Q
+    distance = np.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+    # Randomize `b` within a reasonable range based on the distance between points P and Q
+    b = np.random.uniform(-0.1 * distance, 0.1 * distance)
+    b2 = -b  # Mirror of `b` for the alternate center
+    
+    
     delta = x1**2 - x2**2 + y1**2 - y2**2
     a = (delta-2*(y1 - y2)*b)/(2*(x1 - x2))
     a2 = (delta-2*(y1 - y2)*b2)/(2*(x1 - x2))

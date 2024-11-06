@@ -93,12 +93,12 @@ class SpellApp:
 
         # Shape Dropdown
         ttk.Label(bottom_frame, text="Select Shape:").grid(row=0, column=2)
-        shape_dropdown = ttk.Combobox(bottom_frame, textvariable=self.shape_var, values=[bases.polygon, bases.line, bases.quadratic, bases.circle, bases.cubic, bases.golden])
+        shape_dropdown = ttk.Combobox(bottom_frame, textvariable=self.shape_var, values=["Polygon", "Line", "Quadratic", "Circle", "Cubic", "Golden"])
         shape_dropdown.grid(row=1, column=2, padx=5)
 
         # Line Type Dropdown
         ttk.Label(bottom_frame, text="Select Line Type:").grid(row=0, column=3)
-        lineType_dropdown = ttk.Combobox(bottom_frame, textvariable=self.lineType_var, values=[line_shapes.centre_circle, line_shapes.non_centre_circle, line_shapes.straight])
+        lineType_dropdown = ttk.Combobox(bottom_frame, textvariable=self.lineType_var, values=["Centre Circle", "Non-Centre Circle", "Straight"])
         lineType_dropdown.grid(row=1, column=3, padx=5)
         
     def load_attributes(self, filename):
@@ -117,9 +117,54 @@ class SpellApp:
         shape = self.shape_var.get()
         lineType = self.lineType_var.get()
 
+        if level == '':
+            level = "None"
+        if rang == '':
+            rang = "None"
+        if area == '':
+            area = "None"
+        if dtype == '':
+            dtype = "None"
+        if school == '':
+            school = "None"
+        if duration == '':
+            duration = "Instant"
+        if concentration == '':
+            concentration = "No"
+        if ritual == '':
+            ritual = "No"
 
+        match shape:
+            case "Polygon":
+                shape = bases.polygon
+            case "Line":
+                shape = bases.line
+            case "Quadratic":
+                shape = bases.quadratic
+            case "Circle":
+                shape = bases.circle
+            case "Cubic":
+                shape = bases.cubic
+            case "Golden":
+                shape = bases.golden
+            case _:
+                shape = bases.polygon
+
+        match lineType:
+            case "Centre Circle":
+                lineType = line_shapes.centre_circle
+            case "Non-Centre Circle":
+                lineType = line_shapes.non_centre_circle
+            case "Straight":
+                lineType = line_shapes.straight
+            case _:
+                lineType = line_shapes.straight
+
+
+        # Convert the level to lowercase in case of "None"
         level = level.lower()
 
+        # Convert the concentration and ritual values to booleans
         if concentration=="Yes":
             concentration = True
         else:
@@ -131,14 +176,14 @@ class SpellApp:
             ritual = False
 
         # Generate the spell image
-        image = self.create_spell_image(level, rang, area, dtype, school,duration,concentration,ritual)
+        image = self.create_spell_image(level, rang, area, dtype, school,duration,concentration, ritual, shape, lineType)
         
         # Display the image
         self.display_image(image)
 
-    def create_spell_image(self, level, rang, area, dtype, school, duration, concentration,ritual):
+    def create_spell_image(self, level, rang, area, dtype, school, duration, concentration,ritual, shape, lineType):
         buf = BytesIO()
-        writer.draw_spell(level, rang, area, dtype, school, duration, concentration, ritual, savename=buf)
+        writer.draw_spell(level, rang, area, dtype, school, duration, concentration, ritual, shape, lineType, savename=buf)
         buf.seek(0)
         return buf
 
