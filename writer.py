@@ -67,7 +67,7 @@ def decode_shape(in_array, k=1, point_color='k', on_color='darkred', off_color="
         else:
             print(f'elem {elem} at index {i} is not valid, input being skipped')
 
-def draw_multiple_inputs(in_array,
+def draw_multiple_inputs(in_array, concentration, ritual, 
                          base_fn=bases.polygon, base_kwargs=[],
                          shape_fn=line_shapes.straight, shape_kwargs=[],
                          point_color='k', labels=[], legend=False, colors=[],
@@ -90,14 +90,32 @@ def draw_multiple_inputs(in_array,
                      shape_fn=shape_fn, shape_kwargs=shape_kwargs, label=labels[i], on_color=colors[i])
 
     if labels[0] is not None and legend:
+        # Get current handles and labels
+        handles, labels = plt.gca().get_legend_handles_labels()
+        
+        # Create concentration and ritual entries first
+        conc_line, = plt.plot([], [], 'o', color='black', label=f"Concentration: {concentration}")
+        ritual_line, = plt.plot([], [], 'o', color='black', label=f"Ritual: {ritual}")
+        
+        # Then create base and shape entries
+        base_name = base_fn.__name__
+        shape_name = shape_fn.__name__
+        base_line, = plt.plot([], [], '-', color='black', label=f"Base: {base_name}")
+        shape_line, = plt.plot([], [], '-', color='black', label=f"Shape: {shape_name}")
+        
+        # Add to handles and labels in the desired order
+        handles.extend([conc_line, ritual_line, base_line, shape_line])
+        labels.extend([f"Concentration: {concentration}", f"Ritual: {ritual}",
+                      f"Base: {base_name}", f"Shape: {shape_name}"])
         match base_fn:
             case bases.polygon:
                 plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.7, 1.0))
             case bases.quadratic:
-                plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.5, 1.0))
                 match shape_fn:
                     case line_shapes.straight:
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-2, 1.0))
+                    case line_shapes.centre_circle:
+                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-1, 1.0))
                     case _:
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.5, 1.0))
             case bases.circle:
@@ -105,7 +123,7 @@ def draw_multiple_inputs(in_array,
             case bases.cubic:
                 match shape_fn:
                     case line_shapes.centre_circle:
-                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.7, 1.0))
+                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-1, 1.0))
                     case line_shapes.straight:
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-2, 1.0))
             case bases.golden:
@@ -113,7 +131,7 @@ def draw_multiple_inputs(in_array,
                     case line_shapes.centre_circle:
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.7, 1.0))
                     case line_shapes.straight:
-                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-2, 1.0))
+                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.5, 1.0))
         
     plt.axis('off')
     plt.axis('scaled')
@@ -186,7 +204,7 @@ def draw_spell(level, rang, area, dtype, school, duration,
     input_array = np.array([non_repeating[i] for i in attributes])
 
     # Draw the multiple inputs
-    draw_multiple_inputs(input_array, base_fn=base_fn, labels=labels, legend=legend,
+    draw_multiple_inputs(input_array, concentration, ritual, base_fn=base_fn, labels=labels, legend=legend,
                         base_kwargs=base_kwargs,
                         shape_fn=shape_fn, shape_kwargs=shape_kwargs,
                         colors=colors, legend_loc=legend_loc)
