@@ -12,6 +12,12 @@ def polygon(n,radius = 1,start_angle = None):
     x,y = (radius * np.sin(small_angle), radius * np.cos(small_angle))
     return(x,y)
 
+def line(n):
+    #makes a horizontal line of n-points
+    x = np.arange(0,n)
+    y = np.zeros((1,n))
+    return(x,y[0])
+
 def quadratic(n,a = 1,b=0,c=0):
     #Creates x,y data for a quadratic equation beginning at 0 and bouncing between positive and negative values
     x= [0]
