@@ -108,29 +108,27 @@ def draw_multiple_inputs(in_array, concentration, ritual,
         labels.extend([f"Concentration: {concentration}", f"Ritual: {ritual}",
                       f"Base: {base_name}", f"Shape: {shape_name}"])
         match base_fn:
-            case bases.polygon:
+            case bases.polygon: # If generating a polygon
                 plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.7, 1.0))
-            case bases.quadratic:
+            case bases.quadratic: # If generating a quadratic
                 match shape_fn:
-                    case line_shapes.straight:
+                    case line_shapes.straight: # of straight line type
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-2, 1.0))
-                    case line_shapes.centre_circle:
+                    case line_shapes.centre_circle: # of centre circle type
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-1, 1.0))
-                    case _:
-                        plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.5, 1.0))
             case bases.circle:
                     plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.5, 1.0))
-            case bases.cubic:
+            case bases.cubic: # If generating a cubic
                 match shape_fn:
-                    case line_shapes.centre_circle:
+                    case line_shapes.centre_circle: # of centre circle type
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-1, 1.0))
-                    case line_shapes.straight:
+                    case line_shapes.straight: # of straight line type
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-2, 1.0))
-            case bases.golden:
+            case bases.golden: # If generating a golden
                 match shape_fn:
-                    case line_shapes.centre_circle:
+                    case line_shapes.centre_circle: # of centre circle type
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.7, 1.0))
-                    case line_shapes.straight:
+                    case line_shapes.straight: # of straight line type
                         plt.legend(loc=legend_loc, fontsize=10, bbox_to_anchor=(-.5, 1.0))
         
     plt.axis('off')
