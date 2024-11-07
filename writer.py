@@ -220,8 +220,6 @@ def draw_spell(level, rang, area, dtype, school, duration,
             plt.plot(0, 0, "", markersize=20, marker="o", color=colors[2], mfc='none', linewidth=10)
 
 
-
-
     plt.savefig(savename, transparent=False, bbox_inches='tight')
     plt.clf()
 
