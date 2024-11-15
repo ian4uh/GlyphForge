@@ -1,7 +1,7 @@
 [
     {
-        "id": "",
-        "name": "",
+        "id": "create-magen",
+        "name": "Create Magen",
         "level": "7",
         "school": "",
         "range": "",
@@ -12,8 +12,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "crown-of-stars",
+        "name": "Crown Of Stars",
         "level": "7",
         "school": "",
         "range": "",
@@ -24,8 +24,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "delayed-blast-fireball",
+        "name": "Delayed Blast Fireball",
         "level": "7",
         "school": "",
         "range": "",
@@ -36,8 +36,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "draconic-transformation",
+        "name": "Draconic Transformation",
         "level": "7",
         "school": "",
         "range": "",
@@ -48,8 +48,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "dream-of-the-blue-veil",
+        "name": "Dream Of The Blue Veil",
         "level": "7",
         "school": "",
         "range": "",
@@ -60,8 +60,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "etherealness",
+        "name": "Etherealness",
         "level": "7",
         "school": "",
         "range": "",
@@ -72,8 +72,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "finger-of-death",
+        "name": "Finger Of Death",
         "level": "7",
         "school": "",
         "range": "",
@@ -84,8 +84,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "forcecage",
+        "name": "Forcecage",
         "level": "7",
         "school": "",
         "range": "",
@@ -96,8 +96,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mirage-arcane",
+        "name": "Mirage Arcane",
         "level": "7",
         "school": "",
         "range": "",
@@ -108,8 +108,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mordenkainens-magnificant-mansion",
+        "name": "Mordenkainens Magnificant Mansion",
         "level": "7",
         "school": "",
         "range": "",
@@ -120,8 +120,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mordenkainens-sword",
+        "name": "Mordenkainens Sword",
         "level": "7",
         "school": "",
         "range": "",
@@ -132,8 +132,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "plane-shift",
+        "name": "Plane Shift",
         "level": "7",
         "school": "",
         "range": "",
@@ -144,8 +144,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "power-word-pain",
+        "name": "Power Word Pain",
         "level": "7",
         "school": "",
         "range": "",
@@ -156,8 +156,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "prismatic-spray",
+        "name": "Prismatic Spray",
         "level": "7",
         "school": "",
         "range": "",
@@ -168,8 +168,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "project-image",
+        "name": "Project Image",
         "level": "7",
         "school": "",
         "range": "",
@@ -180,8 +180,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "reverse-gravity",
+        "name": "Reverse Gravity",
         "level": "7",
         "school": "",
         "range": "",
@@ -192,8 +192,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "sequester",
+        "name": "Sequester",
         "level": "7",
         "school": "",
         "range": "",
@@ -204,8 +204,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "simulacrum",
+        "name": "Simulacrum",
         "level": "7",
         "school": "",
         "range": "",
@@ -216,8 +216,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "symbol",
+        "name": "Symbol",
         "level": "7",
         "school": "",
         "range": "",
@@ -228,8 +228,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "teleport",
+        "name": "Teleport",
         "level": "7",
         "school": "",
         "range": "",
@@ -240,8 +240,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "whirlwind",
+        "name": "Whirlwind",
         "level": "7",
         "school": "",
         "range": "",

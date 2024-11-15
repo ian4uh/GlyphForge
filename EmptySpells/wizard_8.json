@@ -1,7 +1,7 @@
 [
     {
-        "id": "",
-        "name": "",
+        "id": "abi-dalzims-horrid-wilting",
+        "name": "Abi Dalzims Horrid Wilting",
         "level": "8",
         "school": "",
         "range": "",
@@ -12,8 +12,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "antimagic-field",
+        "name": "Antimagic Field",
         "level": "8",
         "school": "",
         "range": "",
@@ -24,8 +24,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "antipathy-sympathy",
+        "name": "Antipathy Sympathy",
         "level": "8",
         "school": "",
         "range": "",
@@ -36,8 +36,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "befuddlement",
+        "name": "Befuddlement",
         "level": "8",
         "school": "",
         "range": "",
@@ -48,8 +48,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "clone",
+        "name": "Clone",
         "level": "8",
         "school": "",
         "range": "",
@@ -60,8 +60,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "control-weather",
+        "name": "Control Weather",
         "level": "8",
         "school": "",
         "range": "",
@@ -72,8 +72,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "demiplane",
+        "name": "Demiplane",
         "level": "8",
         "school": "",
         "range": "",
@@ -84,8 +84,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "dominate-monster",
+        "name": "Dominate Monster",
         "level": "8",
         "school": "",
         "range": "",
@@ -96,8 +96,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "illusory-dragon",
+        "name": "Illusory Dragon",
         "level": "8",
         "school": "",
         "range": "",
@@ -108,8 +108,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "incendiary-cloud",
+        "name": "Incendiary Cloud",
         "level": "8",
         "school": "",
         "range": "",
@@ -120,8 +120,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "maddening-darkness",
+        "name": "Maddening Darkness",
         "level": "8",
         "school": "",
         "range": "",
@@ -132,8 +132,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "maze",
+        "name": "Maze",
         "level": "8",
         "school": "",
         "range": "",
@@ -144,8 +144,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mighty-fortress",
+        "name": "Mighty Fortress",
         "level": "8",
         "school": "",
         "range": "",
@@ -156,8 +156,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mind-blank",
+        "name": "Mind Blank",
         "level": "8",
         "school": "",
         "range": "",
@@ -168,8 +168,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "power-word-stun",
+        "name": "Power Word Stun",
         "level": "8",
         "school": "",
         "range": "",
@@ -180,8 +180,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "sunburst",
+        "name": "Sunburst",
         "level": "8",
         "school": "",
         "range": "",
@@ -192,8 +192,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "telepathy",
+        "name": "Telepathy",
         "level": "8",
         "school": "",
         "range": "",

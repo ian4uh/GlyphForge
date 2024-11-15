@@ -1,4 +1,2 @@
 # Ignore __pycache__ directory and its contents
 __pycache__/
-# Ignore FormatingScripts
-FormatingScripts/

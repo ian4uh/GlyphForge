@@ -1,7 +1,7 @@
 [
     {
-        "id": "",
-        "name": "",
+        "id": "aganazzars-scorcher",
+        "name": "Aganazzars Scorcher",
         "level": "2",
         "school": "",
         "range": "",
@@ -12,8 +12,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "air-bubble",
+        "name": "Air Bubble",
         "level": "2",
         "school": "",
         "range": "",
@@ -24,8 +24,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "alter-self",
+        "name": "Alter Self",
         "level": "2",
         "school": "",
         "range": "",
@@ -36,8 +36,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "arcane-lock",
+        "name": "Arcane Lock",
         "level": "2",
         "school": "",
         "range": "",
@@ -48,8 +48,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "arcane-vigor",
+        "name": "Arcane Vigor",
         "level": "2",
         "school": "",
         "range": "",
@@ -60,8 +60,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "augury",
+        "name": "Augury",
         "level": "2",
         "school": "",
         "range": "",
@@ -72,8 +72,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "blindness-deafness",
+        "name": "Blindness Deafness",
         "level": "2",
         "school": "",
         "range": "",
@@ -84,8 +84,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "blur",
+        "name": "Blur",
         "level": "2",
         "school": "",
         "range": "",
@@ -96,8 +96,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "borrowed-knowledge",
+        "name": "Borrowed Knowledge",
         "level": "2",
         "school": "",
         "range": "",
@@ -108,8 +108,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "cloud-of-daggers",
+        "name": "Cloud Of Daggers",
         "level": "2",
         "school": "",
         "range": "",
@@ -120,8 +120,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "continual-flame",
+        "name": "Continual Flame",
         "level": "2",
         "school": "",
         "range": "",
@@ -132,8 +132,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "crown-of-madness",
+        "name": "Crown Of Madness",
         "level": "2",
         "school": "",
         "range": "",
@@ -144,8 +144,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "darkness",
+        "name": "Darkness",
         "level": "2",
         "school": "",
         "range": "",
@@ -156,8 +156,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "darkvision",
+        "name": "Darkvision",
         "level": "2",
         "school": "",
         "range": "",
@@ -168,8 +168,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "detect-thoughts",
+        "name": "Detect Thoughts",
         "level": "2",
         "school": "",
         "range": "",
@@ -180,8 +180,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "dragons-breath",
+        "name": "Dragons Breath",
         "level": "2",
         "school": "",
         "range": "",
@@ -192,8 +192,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "dust-devil",
+        "name": "Dust Devil",
         "level": "2",
         "school": "",
         "range": "",
@@ -204,8 +204,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "earthbind",
+        "name": "Earthbind",
         "level": "2",
         "school": "",
         "range": "",
@@ -216,8 +216,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "enhance-ability",
+        "name": "Enhance Ability",
         "level": "2",
         "school": "",
         "range": "",
@@ -228,8 +228,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "enlarge-reduce",
+        "name": "Enlarge Reduce",
         "level": "2",
         "school": "",
         "range": "",
@@ -240,8 +240,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "flaming-sphere",
+        "name": "Flaming Sphere",
         "level": "2",
         "school": "",
         "range": "",
@@ -252,8 +252,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "flock-of-familiars",
+        "name": "Flock Of Familiars",
         "level": "2",
         "school": "",
         "range": "",
@@ -264,8 +264,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "gentle-repose",
+        "name": "Gentle Repose",
         "level": "2",
         "school": "",
         "range": "",
@@ -276,8 +276,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "gift-of-gab",
+        "name": "Gift Of Gab",
         "level": "2",
         "school": "",
         "range": "",
@@ -288,8 +288,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "gust-of-wind",
+        "name": "Gust Of Wind",
         "level": "2",
         "school": "",
         "range": "",
@@ -300,8 +300,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "hold-person",
+        "name": "Hold Person",
         "level": "2",
         "school": "",
         "range": "",
@@ -312,8 +312,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "invisibility",
+        "name": "Invisibility",
         "level": "2",
         "school": "",
         "range": "",
@@ -324,8 +324,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "jims-glowing-coin",
+        "name": "Jims Glowing Coin",
         "level": "2",
         "school": "",
         "range": "",
@@ -336,8 +336,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "kinetic-jaunt",
+        "name": "Kinetic Jaunt",
         "level": "2",
         "school": "",
         "range": "",
@@ -348,8 +348,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "knock",
+        "name": "Knock",
         "level": "2",
         "school": "",
         "range": "",
@@ -360,8 +360,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "levitate",
+        "name": "Levitate",
         "level": "2",
         "school": "",
         "range": "",
@@ -372,8 +372,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "locate-object",
+        "name": "Locate Object",
         "level": "2",
         "school": "",
         "range": "",
@@ -384,8 +384,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "magic-mouth",
+        "name": "Magic Mouth",
         "level": "2",
         "school": "",
         "range": "",
@@ -396,8 +396,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "magic-weapon",
+        "name": "Magic Weapon",
         "level": "2",
         "school": "",
         "range": "",
@@ -408,8 +408,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "maximilians-earthen-grasp",
+        "name": "Maximilians Earthen Grasp",
         "level": "2",
         "school": "",
         "range": "",
@@ -420,8 +420,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "melfs-acid-arrow",
+        "name": "Melfs Acid Arrow",
         "level": "2",
         "school": "",
         "range": "",
@@ -432,8 +432,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mind-spike",
+        "name": "Mind Spike",
         "level": "2",
         "school": "",
         "range": "",
@@ -444,8 +444,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mirror-image",
+        "name": "Mirror Image",
         "level": "2",
         "school": "",
         "range": "",
@@ -456,8 +456,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "misty-step",
+        "name": "Misty Step",
         "level": "2",
         "school": "",
         "range": "",
@@ -468,8 +468,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "nathairs-mischief",
+        "name": "Nathairs Mischief",
         "level": "2",
         "school": "",
         "range": "",
@@ -480,8 +480,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mystuls-magic-aura",
+        "name": "Mystuls Magic Aura",
         "level": "2",
         "school": "",
         "range": "",
@@ -492,8 +492,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "phantasmal-force",
+        "name": "Phantasmal Force",
         "level": "2",
         "school": "",
         "range": "",
@@ -504,8 +504,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "pyrotechnics",
+        "name": "Pyrotechnics",
         "level": "2",
         "school": "",
         "range": "",
@@ -516,8 +516,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "ray-of-enfeeblement",
+        "name": "Ray Of Enfeeblement",
         "level": "2",
         "school": "",
         "range": "",
@@ -528,8 +528,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "rimes-binding-ice",
+        "name": "Rimes Binding Ice",
         "level": "2",
         "school": "",
         "range": "",
@@ -540,8 +540,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "rope-trick",
+        "name": "Rope Trick",
         "level": "2",
         "school": "",
         "range": "",
@@ -552,8 +552,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "scorching-ray",
+        "name": "Scorching Ray",
         "level": "2",
         "school": "",
         "range": "",
@@ -564,8 +564,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "see-invisibility",
+        "name": "See Invisibility",
         "level": "2",
         "school": "",
         "range": "",
@@ -576,8 +576,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "shadow-blade",
+        "name": "Shadow Blade",
         "level": "2",
         "school": "",
         "range": "",
@@ -588,8 +588,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "shatter",
+        "name": "Shatter",
         "level": "2",
         "school": "",
         "range": "",
@@ -600,8 +600,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "skywrite",
+        "name": "Skywrite",
         "level": "2",
         "school": "",
         "range": "",
@@ -612,8 +612,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "snillocs-snowball-storm",
+        "name": "Snillocs Snowball Storm",
         "level": "2",
         "school": "",
         "range": "",
@@ -624,8 +624,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "spider-climb",
+        "name": "Spider Climb",
         "level": "2",
         "school": "",
         "range": "",
@@ -636,8 +636,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "spray-of-cards",
+        "name": "Spray Of Cards",
         "level": "2",
         "school": "",
         "range": "",
@@ -648,8 +648,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "suggestion",
+        "name": "Suggestion",
         "level": "2",
         "school": "",
         "range": "",
@@ -660,8 +660,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "tashas-mind-whip",
+        "name": "Tashas Mind Whip",
         "level": "2",
         "school": "",
         "range": "",
@@ -672,8 +672,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "vortex-warp",
+        "name": "Vortex Warp",
         "level": "2",
         "school": "",
         "range": "",
@@ -684,8 +684,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "warding-wind",
+        "name": "Warding Wind",
         "level": "2",
         "school": "",
         "range": "",
@@ -696,8 +696,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "warp-sense",
+        "name": "Warp Sense",
         "level": "2",
         "school": "",
         "range": "",
@@ -708,8 +708,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "web",
+        "name": "Web",
         "level": "2",
         "school": "",
         "range": "",
@@ -720,8 +720,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "wither-and-bloom",
+        "name": "Wither And Bloom",
         "level": "2",
         "school": "",
         "range": "",

@@ -1,7 +1,7 @@
 [
     {
-        "id": "",
-        "name": "",
+        "id": "arcane-eye",
+        "name": "Arcane Eye",
         "level": "4",
         "school": "",
         "range": "",
@@ -12,8 +12,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "banishment",
+        "name": "Banishment",
         "level": "4",
         "school": "",
         "range": "",
@@ -24,8 +24,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "blight",
+        "name": "Blight",
         "level": "4",
         "school": "",
         "range": "",
@@ -36,8 +36,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "charm-monster",
+        "name": "Charm Monster",
         "level": "4",
         "school": "",
         "range": "",
@@ -48,8 +48,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "confusion",
+        "name": "Confusion",
         "level": "4",
         "school": "",
         "range": "",
@@ -60,8 +60,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "conjure-minor-elementals",
+        "name": "Conjure Minor Elementals",
         "level": "4",
         "school": "",
         "range": "",
@@ -72,8 +72,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "control-water",
+        "name": "Control Water",
         "level": "4",
         "school": "",
         "range": "",
@@ -84,8 +84,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "dimension-door",
+        "name": "Dimension Door",
         "level": "4",
         "school": "",
         "range": "",
@@ -96,8 +96,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "divination",
+        "name": "Divination",
         "level": "4",
         "school": "",
         "range": "",
@@ -108,8 +108,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "elemental-bane",
+        "name": "Elemental Bane",
         "level": "4",
         "school": "",
         "range": "",
@@ -120,8 +120,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "evards-black-tentacles",
+        "name": "Evards Black Tentacles",
         "level": "4",
         "school": "",
         "range": "",
@@ -132,8 +132,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "fabricate",
+        "name": "Fabricate",
         "level": "4",
         "school": "",
         "range": "",
@@ -144,8 +144,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "fire-shield",
+        "name": "Fire Shield",
         "level": "4",
         "school": "",
         "range": "",
@@ -156,8 +156,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "galders-speedy-courier",
+        "name": "Galders Speedy Courier",
         "level": "4",
         "school": "",
         "range": "",
@@ -168,8 +168,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "gate-seal",
+        "name": "Gate Seal",
         "level": "4",
         "school": "",
         "range": "",
@@ -180,8 +180,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "greater-invisibility",
+        "name": "Greater Invisibility",
         "level": "4",
         "school": "",
         "range": "",
@@ -192,8 +192,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "hallucinatory-terrain",
+        "name": "Hallucinatory Terrain",
         "level": "4",
         "school": "",
         "range": "",
@@ -204,8 +204,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "ice-storm",
+        "name": "Ice Storm",
         "level": "4",
         "school": "",
         "range": "",
@@ -216,8 +216,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "leomunds-secret-chest",
+        "name": "Leomunds Secret Chest",
         "level": "4",
         "school": "",
         "range": "",
@@ -228,8 +228,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "locate-creature",
+        "name": "Locate Creature",
         "level": "4",
         "school": "",
         "range": "",
@@ -240,8 +240,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mordenkainens-faithful-hound",
+        "name": "Mordenkainens Faithful Hound",
         "level": "4",
         "school": "",
         "range": "",
@@ -252,8 +252,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mordenkainens-private-sanctum",
+        "name": "Mordenkainens Private Sanctum",
         "level": "4",
         "school": "",
         "range": "",
@@ -264,8 +264,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "otilukes-resilient-sphere",
+        "name": "Otilukes Resilient Sphere",
         "level": "4",
         "school": "",
         "range": "",
@@ -276,8 +276,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "phantasmal-killer",
+        "name": "Phantasmal Killer",
         "level": "4",
         "school": "",
         "range": "",
@@ -288,8 +288,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "polymorph",
+        "name": "Polymorph",
         "level": "4",
         "school": "",
         "range": "",
@@ -300,8 +300,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "raulothims-psychic-lance",
+        "name": "Raulothims Psychic Lance",
         "level": "4",
         "school": "",
         "range": "",
@@ -312,8 +312,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "sickening-radiance",
+        "name": "Sickening Radiance",
         "level": "4",
         "school": "",
         "range": "",
@@ -324,8 +324,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "spirit-of-death",
+        "name": "Spirit Of Death",
         "level": "4",
         "school": "",
         "range": "",
@@ -336,8 +336,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "stone-shape",
+        "name": "Stone Shape",
         "level": "4",
         "school": "",
         "range": "",
@@ -348,8 +348,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "stoneskin",
+        "name": "Stoneskin",
         "level": "4",
         "school": "",
         "range": "",
@@ -360,8 +360,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "storm-sphere",
+        "name": "Storm Sphere",
         "level": "4",
         "school": "",
         "range": "",
@@ -372,8 +372,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-aberration",
+        "name": "Summon Aberration",
         "level": "4",
         "school": "",
         "range": "",
@@ -384,8 +384,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-construct",
+        "name": "Summon Construct",
         "level": "4",
         "school": "",
         "range": "",
@@ -396,8 +396,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-elemental",
+        "name": "Summon Elemental",
         "level": "4",
         "school": "",
         "range": "",
@@ -408,8 +408,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-greater-demon",
+        "name": "Summon Greater Demon",
         "level": "4",
         "school": "",
         "range": "",
@@ -420,8 +420,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "vitriolic-sphere",
+        "name": "Vitriolic Sphere",
         "level": "4",
         "school": "",
         "range": "",
@@ -432,8 +432,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "wall-of-fire",
+        "name": "Wall Of Fire",
         "level": "4",
         "school": "",
         "range": "",
@@ -444,8 +444,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "watery-sphere",
+        "name": "Watery Sphere",
         "level": "4",
         "school": "",
         "range": "",

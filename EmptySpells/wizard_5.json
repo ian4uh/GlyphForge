@@ -1,7 +1,7 @@
 [
     {
-        "id": "",
-        "name": "",
+        "id": "animate-objects",
+        "name": "Animate Objects",
         "level": "5",
         "school": "",
         "range": "",
@@ -12,8 +12,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "bigbys-hand",
+        "name": "Bigbys Hand",
         "level": "5",
         "school": "",
         "range": "",
@@ -24,8 +24,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "circle-of-power",
+        "name": "Circle Of Power",
         "level": "5",
         "school": "",
         "range": "",
@@ -36,8 +36,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "cloudkill",
+        "name": "Cloudkill",
         "level": "5",
         "school": "",
         "range": "",
@@ -48,8 +48,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "cone-of-cold",
+        "name": "Cone Of Cold",
         "level": "5",
         "school": "",
         "range": "",
@@ -60,8 +60,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "conjure-elemental",
+        "name": "Conjure Elemental",
         "level": "5",
         "school": "",
         "range": "",
@@ -72,8 +72,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "contact-other-plane",
+        "name": "Contact Other Plane",
         "level": "5",
         "school": "",
         "range": "",
@@ -84,8 +84,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "control-winds",
+        "name": "Control Winds",
         "level": "5",
         "school": "",
         "range": "",
@@ -96,8 +96,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "create-spelljamming-helm",
+        "name": "Create Spelljamming Helm",
         "level": "5",
         "school": "",
         "range": "",
@@ -108,8 +108,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "creation",
+        "name": "Creation",
         "level": "5",
         "school": "",
         "range": "",
@@ -120,8 +120,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "danse-macabre",
+        "name": "Danse Macabre",
         "level": "5",
         "school": "",
         "range": "",
@@ -132,8 +132,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "dawn",
+        "name": "Dawn",
         "level": "5",
         "school": "",
         "range": "",
@@ -144,8 +144,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "dominate-person",
+        "name": "Dominate Person",
         "level": "5",
         "school": "",
         "range": "",
@@ -156,8 +156,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "dream",
+        "name": "Dream",
         "level": "5",
         "school": "",
         "range": "",
@@ -168,8 +168,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "enervation",
+        "name": "Enervation",
         "level": "5",
         "school": "",
         "range": "",
@@ -180,8 +180,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "far-step",
+        "name": "Far Step",
         "level": "5",
         "school": "",
         "range": "",
@@ -192,8 +192,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "geas",
+        "name": "Geas",
         "level": "5",
         "school": "",
         "range": "",
@@ -204,8 +204,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "hold-monster",
+        "name": "Hold Monster",
         "level": "5",
         "school": "",
         "range": "",
@@ -216,8 +216,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "immolation",
+        "name": "Immolation",
         "level": "5",
         "school": "",
         "range": "",
@@ -228,8 +228,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "infernal-calling",
+        "name": "Infernal Calling",
         "level": "5",
         "school": "",
         "range": "",
@@ -240,8 +240,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "jallarzis-storm-of-radiance",
+        "name": "Jallarzis Storm Of Radiance",
         "level": "5",
         "school": "",
         "range": "",
@@ -252,8 +252,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "legend-lore",
+        "name": "Legend Lore",
         "level": "5",
         "school": "",
         "range": "",
@@ -264,8 +264,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "mislead",
+        "name": "Mislead",
         "level": "5",
         "school": "",
         "range": "",
@@ -276,8 +276,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "modify-memory",
+        "name": "Modify Memory",
         "level": "5",
         "school": "",
         "range": "",
@@ -288,8 +288,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "negative-energy-flood",
+        "name": "Negative Energy Flood",
         "level": "5",
         "school": "",
         "range": "",
@@ -300,8 +300,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "passwall",
+        "name": "Passwall",
         "level": "5",
         "school": "",
         "range": "",
@@ -312,8 +312,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "planar-binding",
+        "name": "Planar Binding",
         "level": "5",
         "school": "",
         "range": "",
@@ -324,8 +324,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "rarys-telepathic-bond",
+        "name": "Rarys Telepathic Bond",
         "level": "5",
         "school": "",
         "range": "",
@@ -336,8 +336,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "scrying",
+        "name": "Scrying",
         "level": "5",
         "school": "",
         "range": "",
@@ -348,8 +348,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "seeming",
+        "name": "Seeming",
         "level": "5",
         "school": "",
         "range": "",
@@ -360,8 +360,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "skill-empowerment",
+        "name": "Skill Empowerment",
         "level": "5",
         "school": "",
         "range": "",
@@ -372,8 +372,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "steel-wind-strike",
+        "name": "Steel Wind Strike",
         "level": "5",
         "school": "",
         "range": "",
@@ -384,8 +384,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-draconic-spirit",
+        "name": "Summon Draconic Spirit",
         "level": "5",
         "school": "",
         "range": "",
@@ -396,8 +396,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-dragon",
+        "name": "Summon Dragon",
         "level": "5",
         "school": "",
         "range": "",
@@ -408,8 +408,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "synaptic-static",
+        "name": "Synaptic Static",
         "level": "5",
         "school": "",
         "range": "",
@@ -420,8 +420,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "telekinesis",
+        "name": "Telekinesis",
         "level": "5",
         "school": "",
         "range": "",
@@ -432,8 +432,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "teleportation-circle",
+        "name": "Teleportation Circle",
         "level": "5",
         "school": "",
         "range": "",
@@ -444,8 +444,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "transmute-rock",
+        "name": "Transmute Rock",
         "level": "5",
         "school": "",
         "range": "",
@@ -456,8 +456,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "wall-of-force",
+        "name": "Wall Of Force",
         "level": "5",
         "school": "",
         "range": "",
@@ -468,8 +468,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "wall-of-light",
+        "name": "Wall Of Light",
         "level": "5",
         "school": "",
         "range": "",
@@ -480,8 +480,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "wall-of-stone",
+        "name": "Wall Of Stone",
         "level": "5",
         "school": "",
         "range": "",
@@ -492,8 +492,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "yolandes-regal-presence",
+        "name": "Yolandes Regal Presence",
         "level": "5",
         "school": "",
         "range": "",

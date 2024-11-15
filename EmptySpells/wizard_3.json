@@ -1,7 +1,7 @@
 [
     {
-        "id": "",
-        "name": "",
+        "id": "animate-dead",
+        "name": "Animate Dead",
         "level": "3",
         "school": "",
         "range": "",
@@ -12,8 +12,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "antagonize",
+        "name": "Antagonize",
         "level": "3",
         "school": "",
         "range": "",
@@ -24,8 +24,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "ashardalons-stride",
+        "name": "Ashardalons Stride",
         "level": "3",
         "school": "",
         "range": "",
@@ -36,8 +36,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "bestow-curse",
+        "name": "Bestow Curse",
         "level": "3",
         "school": "",
         "range": "",
@@ -48,8 +48,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "blink",
+        "name": "Blink",
         "level": "3",
         "school": "",
         "range": "",
@@ -60,8 +60,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "catnap",
+        "name": "Catnap",
         "level": "3",
         "school": "",
         "range": "",
@@ -72,8 +72,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "clairvoyance",
+        "name": "Clairvoyance",
         "level": "3",
         "school": "",
         "range": "",
@@ -84,8 +84,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "counterspell",
+        "name": "Counterspell",
         "level": "3",
         "school": "",
         "range": "",
@@ -96,8 +96,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "dispel-magic",
+        "name": "Dispel Magic",
         "level": "3",
         "school": "",
         "range": "",
@@ -108,8 +108,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "enemies-abound",
+        "name": "Enemies Abound",
         "level": "3",
         "school": "",
         "range": "",
@@ -120,8 +120,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "erupting-earth",
+        "name": "Erupting Earth",
         "level": "3",
         "school": "",
         "range": "",
@@ -132,8 +132,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "fast-friends",
+        "name": "Fast Friends",
         "level": "3",
         "school": "",
         "range": "",
@@ -144,8 +144,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "fear",
+        "name": "Fear",
         "level": "3",
         "school": "",
         "range": "",
@@ -156,8 +156,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "feign-death",
+        "name": "Feign Death",
         "level": "3",
         "school": "",
         "range": "",
@@ -168,8 +168,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "fireball",
+        "name": "Fireball",
         "level": "3",
         "school": "",
         "range": "",
@@ -180,8 +180,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "flame-arrows",
+        "name": "Flame Arrows",
         "level": "3",
         "school": "",
         "range": "",
@@ -192,8 +192,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "fly",
+        "name": "Fly",
         "level": "3",
         "school": "",
         "range": "",
@@ -204,8 +204,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "galders-tower",
+        "name": "Galders Tower",
         "level": "3",
         "school": "",
         "range": "",
@@ -216,8 +216,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "gaseous-form",
+        "name": "Gaseous Form",
         "level": "3",
         "school": "",
         "range": "",
@@ -228,8 +228,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "glyph-of-warding",
+        "name": "Glyph Of Warding",
         "level": "3",
         "school": "",
         "range": "",
@@ -240,8 +240,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "haste",
+        "name": "Haste",
         "level": "3",
         "school": "",
         "range": "",
@@ -252,8 +252,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "hypnotic-pattern",
+        "name": "Hypnotic Pattern",
         "level": "3",
         "school": "",
         "range": "",
@@ -264,8 +264,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "incite-greed",
+        "name": "Incite Greed",
         "level": "3",
         "school": "",
         "range": "",
@@ -276,8 +276,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "intellect-fortress",
+        "name": "Intellect Fortress",
         "level": "3",
         "school": "",
         "range": "",
@@ -288,8 +288,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "leomunds-tiny-hut",
+        "name": "Leomunds Tiny Hut",
         "level": "3",
         "school": "",
         "range": "",
@@ -300,8 +300,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "life-transference",
+        "name": "Life Transference",
         "level": "3",
         "school": "",
         "range": "",
@@ -312,8 +312,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "lightning-bolt",
+        "name": "Lightning Bolt",
         "level": "3",
         "school": "",
         "range": "",
@@ -324,8 +324,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "magic-circle",
+        "name": "Magic Circle",
         "level": "3",
         "school": "",
         "range": "",
@@ -336,8 +336,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "major-image",
+        "name": "Major Image",
         "level": "3",
         "school": "",
         "range": "",
@@ -348,8 +348,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "melfs-minute-meteors",
+        "name": "Melfs Minute Meteors",
         "level": "3",
         "school": "",
         "range": "",
@@ -360,8 +360,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "nondetection",
+        "name": "Nondetection",
         "level": "3",
         "school": "",
         "range": "",
@@ -372,8 +372,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "phantom-steed",
+        "name": "Phantom Steed",
         "level": "3",
         "school": "",
         "range": "",
@@ -384,8 +384,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "protection-from-energy",
+        "name": "Protection From Energy",
         "level": "3",
         "school": "",
         "range": "",
@@ -396,8 +396,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "remove-curse",
+        "name": "Remove Curse",
         "level": "3",
         "school": "",
         "range": "",
@@ -408,8 +408,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "sending",
+        "name": "Sending",
         "level": "3",
         "school": "",
         "range": "",
@@ -420,8 +420,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "sleet-storm",
+        "name": "Sleet Storm",
         "level": "3",
         "school": "",
         "range": "",
@@ -432,8 +432,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "slow",
+        "name": "Slow",
         "level": "3",
         "school": "",
         "range": "",
@@ -444,8 +444,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "speak-with-dead",
+        "name": "Speak With Dead",
         "level": "3",
         "school": "",
         "range": "",
@@ -456,8 +456,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "spirit-shroud",
+        "name": "Spirit Shroud",
         "level": "3",
         "school": "",
         "range": "",
@@ -468,8 +468,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "stinking-cloud",
+        "name": "Stinking Cloud",
         "level": "3",
         "school": "",
         "range": "",
@@ -480,8 +480,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-fey",
+        "name": "Summon Fey",
         "level": "3",
         "school": "",
         "range": "",
@@ -492,8 +492,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-lesser-demon",
+        "name": "Summon Lesser Demon",
         "level": "3",
         "school": "",
         "range": "",
@@ -504,8 +504,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-shadowspawn",
+        "name": "Summon Shadowspawn",
         "level": "3",
         "school": "",
         "range": "",
@@ -516,8 +516,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "summon-undead",
+        "name": "Summon Undead",
         "level": "3",
         "school": "",
         "range": "",
@@ -528,8 +528,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "thunder-step",
+        "name": "Thunder Step",
         "level": "3",
         "school": "",
         "range": "",
@@ -540,8 +540,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "tidal-wave",
+        "name": "Tidal Wave",
         "level": "3",
         "school": "",
         "range": "",
@@ -552,8 +552,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "tiny-servant",
+        "name": "Tiny Servant",
         "level": "3",
         "school": "",
         "range": "",
@@ -564,8 +564,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "tongues",
+        "name": "Tongues",
         "level": "3",
         "school": "",
         "range": "",
@@ -576,8 +576,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "vampiric-touch",
+        "name": "Vampiric Touch",
         "level": "3",
         "school": "",
         "range": "",
@@ -588,8 +588,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "wall-of-sand",
+        "name": "Wall Of Sand",
         "level": "3",
         "school": "",
         "range": "",
@@ -600,8 +600,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "wall-of-water",
+        "name": "Wall Of Water",
         "level": "3",
         "school": "",
         "range": "",
@@ -612,8 +612,8 @@
         "concentration": false
     },
     {
-        "id": "",
-        "name": "",
+        "id": "water-breathing",
+        "name": "Water Breathing",
         "level": "3",
         "school": "",
         "range": "",
