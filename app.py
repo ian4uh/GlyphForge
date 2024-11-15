@@ -8,6 +8,7 @@ import writer
 import bases
 import line_shapes
 import random
+import json
 
 class SpellApp:
     def __init__(self, master):
@@ -41,6 +42,11 @@ class SpellApp:
         # Label to display the image
         self.image_label = tk.Label(master)
         self.image_label.pack()
+
+        # Create label for spell name
+        self.spell_name_label = tk.Label(master, text="")
+        self.spell_name_label.pack()
+
 
     def create_dropdowns(self):
         self.level_var = tk.StringVar()
@@ -186,6 +192,16 @@ class SpellApp:
         # Generate the spell image
         image = self.create_spell_image(level, rang, area, dtype, school,duration,concentration, ritual, shape, lineType)
         
+        # Check for matching spell
+        # Check for matching spell
+        matching_spell = self.find_matching_spell(level, rang, area, dtype, school, duration, concentration, ritual)
+        if matching_spell:
+            self.spell_name_label.config(text=f"Matching Spell: {matching_spell}")
+        else:
+            self.spell_name_label.config(text="Spell does not exist... yet")
+
+
+
         # Display the image
         self.display_image(image)
 
@@ -242,6 +258,23 @@ class SpellApp:
         photo = ImageTk.PhotoImage(image)
         self.image_label.config(image=photo)
         self.image_label.image = photo  # Keep a reference to avoid garbage collection
+
+    def find_matching_spell(self, level, rang, area, dtype, school, duration, concentration, ritual):
+        with open('wizard_cantrips.json', 'r') as file:
+            spells = json.load(file)
+        
+        for spell in spells:
+            if (str(spell['level']) == level and
+                spell['range'] == rang and
+                spell['area_type'] == area and
+                spell['dtype'] == dtype and
+                spell['school'] == school and
+                spell['duration'] == duration and
+                spell['concentration'] == concentration and
+                spell['ritual'] == ritual):
+                return spell['name']
+        return None
+
 
 if __name__ == "__main__":
     root = tk.Tk()
