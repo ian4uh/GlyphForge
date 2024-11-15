@@ -25,7 +25,7 @@
     },
     {
         "id": "circle-of-death",
-        "name": "Circle Of Death",
+        "name": "Circle of Death",
         "level": "6",
         "school": "",
         "range": "",
@@ -121,7 +121,7 @@
     },
     {
         "id": "flesh-to-stone",
-        "name": "Flesh To Stone",
+        "name": "Flesh to Stone",
         "level": "6",
         "school": "",
         "range": "",
@@ -133,7 +133,7 @@
     },
     {
         "id": "globe-of-invulnerability",
-        "name": "Globe Of Invulnerability",
+        "name": "Globe of Invulnerability",
         "level": "6",
         "school": "",
         "range": "",
@@ -145,7 +145,7 @@
     },
     {
         "id": "guards-and-wards",
-        "name": "Guards And Wards",
+        "name": "Guards and Wards",
         "level": "6",
         "school": "",
         "range": "",
@@ -157,7 +157,7 @@
     },
     {
         "id": "investiture-of-flame",
-        "name": "Investiture Of Flame",
+        "name": "Investiture of Flame",
         "level": "6",
         "school": "",
         "range": "",
@@ -169,7 +169,7 @@
     },
     {
         "id": "investiture-of-ice",
-        "name": "Investiture Of Ice",
+        "name": "Investiture of Ice",
         "level": "6",
         "school": "",
         "range": "",
@@ -181,7 +181,7 @@
     },
     {
         "id": "investiture-of-stone",
-        "name": "Investiture Of Stone",
+        "name": "Investiture of Stone",
         "level": "6",
         "school": "",
         "range": "",
@@ -193,7 +193,7 @@
     },
     {
         "id": "investiture-of-wind",
-        "name": "Investiture Of Wind",
+        "name": "Investiture of Wind",
         "level": "6",
         "school": "",
         "range": "",
@@ -373,7 +373,7 @@
     },
     {
         "id": "wall-of-ice",
-        "name": "Wall Of Ice",
+        "name": "Wall of Ice",
         "level": "6",
         "school": "",
         "range": "",

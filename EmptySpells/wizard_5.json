@@ -25,7 +25,7 @@
     },
     {
         "id": "circle-of-power",
-        "name": "Circle Of Power",
+        "name": "Circle of Power",
         "level": "5",
         "school": "",
         "range": "",
@@ -49,7 +49,7 @@
     },
     {
         "id": "cone-of-cold",
-        "name": "Cone Of Cold",
+        "name": "Cone of Cold",
         "level": "5",
         "school": "",
         "range": "",
@@ -241,7 +241,7 @@
     },
     {
         "id": "jallarzis-storm-of-radiance",
-        "name": "Jallarzis Storm Of Radiance",
+        "name": "Jallarzis Storm of Radiance",
         "level": "5",
         "school": "",
         "range": "",
@@ -457,7 +457,7 @@
     },
     {
         "id": "wall-of-force",
-        "name": "Wall Of Force",
+        "name": "Wall of Force",
         "level": "5",
         "school": "",
         "range": "",
@@ -469,7 +469,7 @@
     },
     {
         "id": "wall-of-light",
-        "name": "Wall Of Light",
+        "name": "Wall of Light",
         "level": "5",
         "school": "",
         "range": "",
@@ -481,7 +481,7 @@
     },
     {
         "id": "wall-of-stone",
-        "name": "Wall Of Stone",
+        "name": "Wall of Stone",
         "level": "5",
         "school": "",
         "range": "",

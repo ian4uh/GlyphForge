@@ -1,7 +1,36 @@
 import re
 import json
 import os
-from template import create_empty_spell_template
+
+def create_empty_spell_template():
+    return {
+        "id": "",
+        "name": "",
+        "level": "",
+        "school": "",
+        "range": "",
+        "duration": "",
+        "area_type": "",
+        "dtype": "",
+        "ritual": False,
+        "concentration": False
+    }
+
+def format_spell_name(spell_id):
+    # Words that should remain lowercase
+    lowercase_words = {'of', 'the', 'to', 'and'}
+    
+    # Split the spell name and capitalize each word
+    words = spell_id.replace('-', ' ').split()
+    titled_words = []
+    
+    for i, word in enumerate(words):
+        if i == 0 or word not in lowercase_words:
+            titled_words.append(word.title())
+        else:
+            titled_words.append(word.lower())
+            
+    return ' '.join(titled_words)
 
 def parse_spells_md():
     # Create EmptySpells directory if it doesn't exist
@@ -30,7 +59,7 @@ def parse_spells_md():
             for spell_id in spell_ids:
                 spell = create_empty_spell_template()
                 spell['id'] = spell_id
-                spell['name'] = spell_id.replace('-', ' ').title()  # Convert id to title case name
+                spell['name'] = format_spell_name(spell_id)
                 spell['level'] = level
                 spell['school'] = ""
                 spell['range'] = ""

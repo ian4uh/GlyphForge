@@ -229,7 +229,7 @@
     },
     {
         "id": "glyph-of-warding",
-        "name": "Glyph Of Warding",
+        "name": "Glyph of Warding",
         "level": "3",
         "school": "",
         "range": "",
@@ -589,7 +589,7 @@
     },
     {
         "id": "wall-of-sand",
-        "name": "Wall Of Sand",
+        "name": "Wall of Sand",
         "level": "3",
         "school": "",
         "range": "",
@@ -601,7 +601,7 @@
     },
     {
         "id": "wall-of-water",
-        "name": "Wall Of Water",
+        "name": "Wall of Water",
         "level": "3",
         "school": "",
         "range": "",
