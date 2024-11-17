@@ -66,6 +66,8 @@ class SpellApp:
         bottom_frame = ttk.Frame(self.master)
         bottom_frame.pack()
 
+        ### I probably have to reorganize this later to add even more attributes
+
         # Level dropdown
         ttk.Label(top_frame, text="Select Level:").grid(row=0, column=0)
         level_dropdown = ttk.Combobox(top_frame, textvariable=self.level_var, values=self.levels)
@@ -121,6 +123,7 @@ class SpellApp:
             return [line.strip() for line in f.readlines()]
 
     def generate_spell(self):
+        # Get the user inputs for each field
         level = self.level_var.get()
         rang = self.range_var.get()
         area = self.area_var.get()
@@ -150,6 +153,7 @@ class SpellApp:
         if ritual == '':
             ritual = "No"
 
+        # Set the shape given by the user to the respective class object
         match shape:
             case "Polygon":
                 shape = bases.polygon
@@ -166,6 +170,7 @@ class SpellApp:
             case _:
                 shape = bases.polygon
 
+        # Set the line_shape given by the user to the respective class object
         match lineType:
             case "Centre Circle":
                 lineType = line_shapes.centre_circle
@@ -193,13 +198,11 @@ class SpellApp:
         image = self.create_spell_image(level, rang, area, dtype, school,duration,concentration, ritual, shape, lineType)
         
         # Check for matching spell
-        # Check for matching spell
         matching_spell = self.find_matching_spell(level, rang, area, dtype, school, duration, concentration, ritual)
         if matching_spell:
             self.spell_name_label.config(text=f"Matching Spell: {matching_spell}")
         else:
             self.spell_name_label.config(text="Spell does not exist... yet")
-
 
 
         # Display the image
@@ -239,14 +242,13 @@ class SpellApp:
         # Convert the level to lowercase in case of "None"
         level = level.lower()
 
-
         # Generate the spell image
         image = self.create_spell_image(level, rang, area, dtype, school,duration,concentration, ritual, shape, lineType)
         
         # Display the image
         self.display_image(image)
 
-
+    # Call the writer.py app to do all the match and drawing
     def create_spell_image(self, level, rang, area, dtype, school, duration, concentration,ritual, shape, lineType):
         buf = BytesIO()
         writer.draw_spell(level, rang, area, dtype, school, duration, concentration, ritual, shape, lineType, savename=buf)
@@ -259,6 +261,9 @@ class SpellApp:
         self.image_label.config(image=photo)
         self.image_label.image = photo  # Keep a reference to avoid garbage collection
 
+    # This only checks against wizard_cantrips cause those are finished (probably)
+    # Eventually all the spells will be in one file 
+    ## This might cause search times but we'll see when it's finished
     def find_matching_spell(self, level, rang, area, dtype, school, duration, concentration, ritual):
         with open('wizard_cantrips.json', 'r') as file:
             spells = json.load(file)
@@ -279,5 +284,5 @@ class SpellApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = SpellApp(root)
-    root.protocol("WM_DELETE_WINDOW", root.quit)  # Add this line
+    root.protocol("WM_DELETE_WINDOW", root.quit)
     root.mainloop()
