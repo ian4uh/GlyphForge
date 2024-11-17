@@ -3,6 +3,7 @@ Cone15
 Cone30
 Cone40
 Cone60
+Cube1
 Cube10
 Cube100
 Cube15
@@ -34,3 +35,4 @@ Sphere360
 Sphere40
 Sphere5
 Sphere60
+Square10

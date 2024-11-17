@@ -15,3 +15,5 @@ Psychic
 Radiant
 Slashing
 Thunder
+Debuff
+Buff
