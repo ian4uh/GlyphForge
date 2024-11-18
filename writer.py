@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 from tqdm.auto import tqdm
 
-cmap = plt.get_cmap('viridis')
+cmap = plt.get_cmap('tab20')
 
 #---------Functions for creating unique binary numbers------
 def cycle_list(l, loops=1):
@@ -211,14 +211,13 @@ def draw_spell(level, rang, area, dtype, school, duration, cast_time,
                         colors=colors, legend_loc=legend_loc)
 
     # Handle concentration and ritual markers
-    if concentration:
-        if len(colors) > 0:
-            plt.plot(0, 0, "", markersize=10, marker=".", color=colors[0])  # Use the first color
     if ritual:
-        if len(colors) > 1:  # Ensure there's at least one other color for ritual
-            plt.plot(0, 0, "", markersize=10, marker=".", color=colors[1])  # Use the second color
-        if len(colors) > 2:
-            plt.plot(0, 0, "", markersize=20, marker="o", color=colors[2], mfc='none', linewidth=10)
+        if len(colors) > 0:
+            plt.plot(0, 0, "", markersize=10, marker=".", color=colors[0])  # Dot for ritual
+    if concentration:
+        if len(colors) > 1:
+            plt.plot(0, 0, "", markersize=20, marker="o", color=colors[1], mfc='none', linewidth=10)  # Empty circle for concentration
+
 
 
     plt.savefig(savename, transparent=False, bbox_inches='tight')
