@@ -140,7 +140,7 @@ def load_attribute(fname):
     data = [d.strip().lower() for d in data]
     return data
 
-def draw_spell(level, rang, area, dtype, school, duration, 
+def draw_spell(level, rang, area, dtype, school, duration, cast_time, 
                concentration, ritual, base_fn, shape_fn,
                savename="output.png", legend=True, base_kwargs=[],
                shape_kwargs=[], colors=[], legend_loc="upper left", breakdown=True,
@@ -152,6 +152,7 @@ def draw_spell(level, rang, area, dtype, school, duration,
     dtypes = load_attribute("Attributes/damage_types.txt")
     schools = load_attribute("Attributes/school.txt")
     durations = load_attribute("Attributes/duration.txt")
+    cast_times = load_attribute("Attributes/casting_time.txt")
     
     
     # Find indices for the attributes and uses lowercases values
@@ -161,14 +162,16 @@ def draw_spell(level, rang, area, dtype, school, duration,
     i_dtype = [dt.lower() for dt in dtypes].index(dtype.lower())
     i_school = [s.lower() for s in schools].index(school.lower())
     i_duration = [d.lower() for d in durations].index(duration.lower())
+    i_cast_time = [ct.lower() for ct in cast_times].index(cast_time.lower())
     
-    attributes = [i_levels, i_school, i_dtype, i_area, i_range, i_duration]
+    attributes = [i_levels, i_school, i_dtype, i_area, i_range, i_duration, i_cast_time]
     labels = [f"level: {level}",
               f"school: {school}",
-              f"damage type: {dtype}",
+              f"cast time: {cast_time}",
+              f"duration: {duration}",
               f"range: {rang}",
-              f"area_type: {area}",
-              f'duration: {duration}']
+              f"damage type: {dtype}",
+              f"area_type: {area}"]
     N = 2 * len(attributes) + 1
     
     # Handle breakdown coloring

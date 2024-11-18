@@ -16,12 +16,14 @@ class SpellApp:
         self.master.title("Spell Generator")
 
         # Load attributes
-        self.ranges = self.load_attributes("attributes/range.txt")
         self.levels = self.load_attributes("attributes/levels.txt")
+        self.schools = self.load_attributes("attributes/school.txt")
+        self.casting_times = self.load_attributes("attributes/casting_time.txt")
+        self.durations = self.load_attributes("attributes/duration.txt")
+        self.ranges = self.load_attributes("attributes/range.txt")
         self.areas = self.load_attributes("attributes/area_types.txt")
         self.dtypes = self.load_attributes("attributes/damage_types.txt")
-        self.schools = self.load_attributes("attributes/school.txt")
-        self.durations = [line.strip() for line in self.load_attributes("attributes/duration.txt")]
+         
 
 
         # Create dropdowns
@@ -50,11 +52,12 @@ class SpellApp:
 
     def create_dropdowns(self):
         self.level_var = tk.StringVar()
+        self.school_var = tk.StringVar()
+        self.cast_time_var = tk.StringVar()
+        self.duration_var = tk.StringVar()
         self.range_var = tk.StringVar()
         self.area_var = tk.StringVar()
         self.dtype_var = tk.StringVar()
-        self.school_var = tk.StringVar()
-        self.duration_var = tk.StringVar()
         self.concentration_var = tk.StringVar()
         self.ritual_var = tk.StringVar()
         self.shape_var = tk.StringVar()
@@ -66,8 +69,6 @@ class SpellApp:
         bottom_frame = ttk.Frame(self.master)
         bottom_frame.pack()
 
-        ### I probably have to reorganize this later to add even more attributes
-
         # Level dropdown
         ttk.Label(top_frame, text="Select Level:").grid(row=0, column=0)
         level_dropdown = ttk.Combobox(top_frame, textvariable=self.level_var, values=self.levels)
@@ -78,25 +79,30 @@ class SpellApp:
         school_dropdown = ttk.Combobox(top_frame, textvariable=self.school_var, values=self.schools)
         school_dropdown.grid(row=1, column=1, padx=5)
 
-        # Damage Type dropdown
-        ttk.Label(top_frame, text="Select Damage Type:").grid(row=0, column=2)
-        dtype_dropdown = ttk.Combobox(top_frame, textvariable=self.dtype_var, values=self.dtypes)
-        dtype_dropdown.grid(row=1, column=2, padx=5)
+        # Casting Time dropdown
+        ttk.Label(top_frame, text="Select Casting Time:").grid(row=0, column=2)
+        cast_time_dropdown = ttk.Combobox(top_frame, textvariable=self.cast_time_var, values=self.casting_times)
+        cast_time_dropdown.grid(row=1, column=2, padx=5)
 
-        # Area dropdown
-        ttk.Label(top_frame, text="Select Area Type:").grid(row=0, column=3)
-        area_dropdown = ttk.Combobox(top_frame, textvariable=self.area_var, values=self.areas)
-        area_dropdown.grid(row=1, column=3, padx=5)
+        # Duration dropdown
+        ttk.Label(top_frame, text="Select Duration:").grid(row=0, column=3)
+        duration_dropdown = ttk.Combobox(top_frame, textvariable=self.duration_var, values=self.durations)
+        duration_dropdown.grid(row=1, column=3, padx=5)
 
         # Range dropdown
         ttk.Label(top_frame, text="Select Range:").grid(row=0, column=4)
         range_dropdown = ttk.Combobox(top_frame, textvariable=self.range_var, values=self.ranges)
         range_dropdown.grid(row=1, column=4, padx=5)
 
-        # Duration dropdown
-        ttk.Label(top_frame, text="Select Duration:").grid(row=0, column=5)
-        duration_dropdown = ttk.Combobox(top_frame, textvariable=self.duration_var, values=self.durations)
-        duration_dropdown.grid(row=1, column=5, padx=5)
+        # Area dropdown
+        ttk.Label(top_frame, text="Select Area Type:").grid(row=0, column=5)
+        area_dropdown = ttk.Combobox(top_frame, textvariable=self.area_var, values=self.areas)
+        area_dropdown.grid(row=1, column=5, padx=5)
+
+        # Damage Type dropdown
+        ttk.Label(top_frame, text="Select Damage Type:").grid(row=0, column=6)
+        dtype_dropdown = ttk.Combobox(top_frame, textvariable=self.dtype_var, values=self.dtypes)
+        dtype_dropdown.grid(row=1, column=6, padx=5)
 
         # Concentration dropdown
         ttk.Label(bottom_frame, text="Concentration:").grid(row=0, column=0)
@@ -125,11 +131,12 @@ class SpellApp:
     def generate_spell(self):
         # Get the user inputs for each field
         level = self.level_var.get()
+        school = self.school_var.get()
+        cast_time = self.cast_time_var.get()
+        duration = self.duration_var.get()
         rang = self.range_var.get()
         area = self.area_var.get()
         dtype = self.dtype_var.get()
-        school = self.school_var.get()
-        duration = self.duration_var.get()
         concentration = self.concentration_var.get()
         ritual = self.ritual_var.get()
         shape = self.shape_var.get()
@@ -138,16 +145,18 @@ class SpellApp:
         # Set default inputs - had to do it this way cause the results get passed in anyway
         if level == '':
             level = "None"
+        if school == '':
+            school = "None"
+        if cast_time =='':
+            cast_time = "None"
+        if duration == '':
+            duration = "Instant"
         if rang == '':
             rang = "None"
         if area == '':
             area = "None"
         if dtype == '':
             dtype = "None"
-        if school == '':
-            school = "None"
-        if duration == '':
-            duration = "Instant"
         if concentration == '':
             concentration = "No"
         if ritual == '':
@@ -195,10 +204,10 @@ class SpellApp:
             ritual = False
 
         # Generate the spell image
-        image = self.create_spell_image(level, rang, area, dtype, school,duration,concentration, ritual, shape, lineType)
+        image = self.create_spell_image(level, rang, area, dtype, school,duration, cast_time, concentration, ritual, shape, lineType)
         
         # Check for matching spell
-        matching_spell = self.find_matching_spell(level, rang, area, dtype, school, duration, concentration, ritual)
+        matching_spell = self.find_matching_spell(level, rang, area, dtype, school, duration, cast_time, concentration, ritual)
         if matching_spell:
             self.spell_name_label.config(text=f"Matching Spell: {matching_spell}")
         else:
@@ -234,6 +243,10 @@ class SpellApp:
             durations = f.read().splitlines()
         duration = random.choice(durations)
 
+        with open('attributes/casting_time.txt', 'r') as f:
+            cast_time = f.read().splitlines()
+        rang = random.choice(ranges)
+
         concentration = random.choice([True, False])
         ritual = random.choice([True, False])
         shape = random.choice([bases.polygon, bases.quadratic, bases.circle, bases.cubic, bases.golden])
@@ -243,15 +256,15 @@ class SpellApp:
         level = level.lower()
 
         # Generate the spell image
-        image = self.create_spell_image(level, rang, area, dtype, school,duration,concentration, ritual, shape, lineType)
+        image = self.create_spell_image(level, rang, area, dtype, school,duration, cast_time, concentration, ritual, shape, lineType)
         
         # Display the image
         self.display_image(image)
 
     # Call the writer.py app to do all the match and drawing
-    def create_spell_image(self, level, rang, area, dtype, school, duration, concentration,ritual, shape, lineType):
+    def create_spell_image(self, level, rang, area, dtype, school, duration, cast_time, concentration,ritual, shape, lineType):
         buf = BytesIO()
-        writer.draw_spell(level, rang, area, dtype, school, duration, concentration, ritual, shape, lineType, savename=buf)
+        writer.draw_spell(level, rang, area, dtype, school, duration, cast_time, concentration, ritual, shape, lineType, savename=buf)
         buf.seek(0)
         return buf
 
@@ -264,17 +277,18 @@ class SpellApp:
     # This only checks against wizard_cantrips cause those are finished (probably)
     # Eventually all the spells will be in one file 
     ## This might cause search times but we'll see when it's finished
-    def find_matching_spell(self, level, rang, area, dtype, school, duration, concentration, ritual):
+    def find_matching_spell(self, level, rang, area, dtype, school, duration, cast_time, concentration, ritual):
         with open('wizard_cantrips.json', 'r') as file:
             spells = json.load(file)
         
         for spell in spells:
             if (str(spell['level']) == level and
+                spell['school'] == school and
+                spell['casting_time'] == cast_time and
+                spell['duration'] == duration and
                 spell['range'] == rang and
                 spell['area_type'] == area and
                 spell['dtype'] == dtype and
-                spell['school'] == school and
-                spell['duration'] == duration and
                 spell['concentration'] == concentration and
                 spell['ritual'] == ritual):
                 return spell['name']
