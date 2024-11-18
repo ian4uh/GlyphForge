@@ -1,7 +1,7 @@
 ## This is all the spells that need to be finished getting added to their respective spell lists.
 ### This is listed by ID
 
-<details><summary>Cantrips: 32 -- FINISHED</summary>
+<details><summary>Cantrips: 32 -- finished</summary>
 
 - acid-splash
 - blade-ward

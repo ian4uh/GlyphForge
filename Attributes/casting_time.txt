@@ -1,0 +1,10 @@
+None
+Action
+Bonus
+Reaction
+1Min
+10Min
+1Hr
+8Hr
+12Hr
+24Hr
