@@ -244,8 +244,8 @@ class SpellApp:
         duration = random.choice(durations)
 
         with open('attributes/casting_time.txt', 'r') as f:
-            cast_time = f.read().splitlines()
-        rang = random.choice(ranges)
+            cast_times = f.read().splitlines()
+        cast_time = random.choice(cast_times)
 
         concentration = random.choice([True, False])
         ritual = random.choice([True, False])
@@ -258,6 +258,13 @@ class SpellApp:
         # Generate the spell image
         image = self.create_spell_image(level, rang, area, dtype, school,duration, cast_time, concentration, ritual, shape, lineType)
         
+        # Check for matching spell
+        matching_spell = self.find_matching_spell(level, rang, area, dtype, school, duration, cast_time, concentration, ritual)
+        if matching_spell:
+            self.spell_name_label.config(text=f"Matching Spell: {matching_spell}")
+        else:
+            self.spell_name_label.config(text="Spell does not exist... yet")
+
         # Display the image
         self.display_image(image)
 

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 from tqdm.auto import tqdm
 
-cmap = plt.get_cmap('tab20')
+cmap = plt.get_cmap('turbo')
 
 #---------Functions for creating unique binary numbers------
 def cycle_list(l, loops=1):
