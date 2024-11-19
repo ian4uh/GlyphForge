@@ -1,7 +1,7 @@
 import json
 
 
-file_name = 'EmptySpells//wizard_9.json'
+file_name = 'EmptySpells//wizard_1.json'
 
 # Read the original JSON file
 with open(file_name, 'r') as file:
@@ -20,7 +20,6 @@ for spell in cantrips:
         "range": spell["range"],
         "area_type": spell["area_type"],
         "dtype": spell["dtype"],
-        "condition": "None",
         "ritual": spell["ritual"],
         "concentration": spell["concentration"]
     }
