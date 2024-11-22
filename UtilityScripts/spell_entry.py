@@ -8,8 +8,8 @@ def get_input_with_default(prompt: str, current_value: str) -> str:
     user_input = input(f"{prompt} [{current_value}]: ")
     return user_input if user_input.strip() else current_value
 
-def spell_entry_wizard():
-    with open("Grimoire/wizard_2.json", "r") as f:
+def spell_entry_wizard(file):
+    with open(file, "r") as f:
         spells = json.load(f)
     
     # Show available spell IDs
@@ -49,11 +49,12 @@ def spell_entry_wizard():
         spell["condition"] = get_input_with_default("Condition", spell["condition"])
 
         # Save after each spell update
-        with open("Grimoire/wizard_1.json", "w") as f:
+        with open(file, "w") as f:
             json.dump(spells, f, indent=4)
 
         if input("\nContinue to next spell? (y/n): ").lower() != 'y':
             break
 
 if __name__ == "__main__":
-    spell_entry_wizard()
+    file = "Grimoire/wizard_2.json"
+    spell_entry_wizard(file)
