@@ -20,7 +20,7 @@ for filename in os.listdir(directory):
                 "name": spell["name"],
                 "level": spell["level"],
                 "school": "None",
-                "duration": "None",
+                "duration": "Instantaneous",
                 "range": "None",
                 "area_type": "None",
                 "dtype": "None",

@@ -12,7 +12,7 @@
 - dancing-lights
 - elementalism
 - encode-thoughts
-- firebolt
+- fire-bolt
 - friends
 - frostbite
 - green-flame-blade

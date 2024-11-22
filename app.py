@@ -80,7 +80,7 @@ class SpellApp:
         school_dropdown.grid(row=1, column=1, padx=5)
 
         # Condition dropdown
-        ttk.Label(top_frame, text="Select Conditions Time:").grid(row=0, column=2)
+        ttk.Label(top_frame, text="Select Conditions:").grid(row=0, column=2)
         condition_dropdown = ttk.Combobox(top_frame, textvariable=self.condition_var, values=self.conditions)
         condition_dropdown.grid(row=1, column=2, padx=5)
 
@@ -147,8 +147,6 @@ class SpellApp:
             level = "None"
         if school == '':
             school = "None"
-        if condition =='':
-            condition = "None"
         if duration == '':
             duration = "Instantaneous"
         if rang == '':
@@ -157,6 +155,8 @@ class SpellApp:
             area = "None"
         if dtype == '':
             dtype = "None"
+        # Add this line to define include_conditions
+        include_conditions = bool(condition and condition != 'None')
         if concentration == '':
             concentration = "No"
         if ritual == '':
@@ -204,7 +204,10 @@ class SpellApp:
             ritual = False
 
         # Generate the spell image
-        image = self.create_spell_image(level, rang, area, dtype, school,duration, condition, concentration, ritual, shape, lineType)
+        image = self.create_spell_image(level, rang, area, dtype, school, duration, 
+                                  condition if include_conditions else 'None', 
+                                  concentration, ritual, shape, lineType, 
+                                  include_conditions=include_conditions)
         
         # Check for matching spell
         matching_spell = self.find_matching_spell(level, rang, area, dtype, school, duration, condition, concentration, ritual)
@@ -269,9 +272,9 @@ class SpellApp:
         self.display_image(image)
 
     # Call the writer.py app to do all the match and drawing
-    def create_spell_image(self, level, rang, area, dtype, school, duration, condition, concentration,ritual, shape, lineType):
+    def create_spell_image(self, level, rang, area, dtype, school, duration, condition, concentration,ritual, shape, lineType, include_conditions=True):
         buf = BytesIO()
-        writer.draw_spell(level, rang, area, dtype, school, duration, condition, concentration, ritual, shape, lineType, savename=buf)
+        writer.draw_spell(level, rang, area, dtype, school, duration, condition, concentration, ritual, shape, lineType, include_conditions=include_conditions, savename=buf)
         buf.seek(0)
         return buf
 

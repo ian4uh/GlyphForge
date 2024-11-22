@@ -6,8 +6,15 @@ Generate the glyphs based off [Gorilla of Denstiny](https://github.com/GorillaOf
 2. Fill in the dropdown boxes with desired values
 3. Click the `Generate Glyph` button.
 
-## Issues
-Currently, I am running into an issue with each spell and how to list damage type. I added 2 options: buff and debuff but I feel this is not enough. This may be a matter where I have to suck it up and just add another attribute for status effects which creates issues. I am trying to keep the spells as realistic to the Spell Compendium that was released but I don't see how that's possible with everything.
+OR
+
+1. Run the `app.py` file
+2. Click the `Random Spell` button to generate a random glyph.
+
+## Current Development
+I have the app where conditions exist - however I think this might not be needed if this is restricted to just wizard spells which I am testing.
+
+But first I have to catalog all the currently available spells which is draining my soul
 
 # Primary Tasks
 - [X] Update to work with draw_spell_2 from original project

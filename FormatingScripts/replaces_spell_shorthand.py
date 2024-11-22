@@ -14,6 +14,11 @@ def format_school(school_code):
     }
     return school_mapping.get(school_code.lower(), school_code)
 
+def format_duration(duration):
+    if duration.lower() == "instant" or duration.lower() == "instant":
+        return "Instantaneous"
+    return duration
+
 # Process all JSON files in EmptySpells directory
 directory = 'EmptySpells'
 for filename in os.listdir(directory):
@@ -24,9 +29,10 @@ for filename in os.listdir(directory):
         with open(file_path, 'r') as file:
             spells = json.load(file)
 
-        # Update each spell's school
+        # Update each spell's school and duration
         for spell in spells:
             spell['school'] = format_school(spell['school'])
+            spell['duration'] = format_duration(spell['duration'])
 
         # Write the updated data back to the file
         with open(file_path, 'w') as file:

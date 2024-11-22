@@ -141,10 +141,12 @@ def load_attribute(fname):
     return data
 
 def draw_spell(level, rang, area, dtype, school, duration, condition, 
-               concentration, ritual, base_fn, shape_fn,
+               concentration, ritual, base_fn, shape_fn, include_conditions=True,
                savename="output.png", legend=True, base_kwargs=[],
                shape_kwargs=[], colors=[], legend_loc="upper left", breakdown=True,
                base_dir=""):
+    plt.clf()  # Clear the figure before drawing new glyph
+
     # Load attributes
     ranges = load_attribute("Attributes/range.txt")
     levels = load_attribute("Attributes/levels.txt")
@@ -162,16 +164,18 @@ def draw_spell(level, rang, area, dtype, school, duration, condition,
     i_dtype = [dt.lower() for dt in dtypes].index(dtype.lower())
     i_school = [s.lower() for s in schools].index(school.lower())
     i_duration = [d.lower() for d in durations].index(duration.lower())
-    i_condition = [ct.lower() for ct in conditions].index(condition.lower())
+        
     
-    attributes = [i_levels, i_school, i_dtype, i_area, i_range, i_duration, i_condition]
-    labels = [f"level: {level}",
-              f"school: {school}",
-              f"duration: {duration}",
-              f"range: {rang}",
-              f"area_type: {area}",
-              f"damage type: {dtype}",
-              f"condition time: {condition}"]
+    if include_conditions and condition != 'None':
+        i_condition = [ct.lower() for ct in conditions].index(condition.lower())
+        attributes = [i_levels, i_school, i_dtype, i_area, i_range, i_duration, i_condition]
+        labels = [f"level: {level}", f"school: {school}", f"duration: {duration}", 
+                 f"range: {rang}", f"area_type: {area}", f"damage type: {dtype}", 
+                 f"condition time: {condition}"]
+    else:
+        attributes = [i_levels, i_school, i_dtype, i_area, i_range, i_duration]
+        labels = [f"level: {level}", f"school: {school}", f"duration: {duration}", 
+                 f"range: {rang}", f"area_type: {area}", f"damage type: {dtype}"]
     N = 2 * len(attributes) + 1
     
     # Handle breakdown coloring
