@@ -36,7 +36,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "draconic-transformation",
@@ -49,7 +49,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "dream-of-the-blue-veil",
@@ -101,7 +101,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "mirage-arcane",
@@ -140,7 +140,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "plane-shift",
@@ -192,7 +192,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "reverse-gravity",
@@ -205,7 +205,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "sequester",
@@ -270,6 +270,6 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     }
 ]

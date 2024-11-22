@@ -10,7 +10,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "chain-lightning",
@@ -100,7 +100,7 @@
         "area_type": "None",
         "dtype": "None",
         "condition": "None",
-        "ritual": false,
+        "ritual": true,
         "concentration": false
     },
     {
@@ -114,7 +114,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "fizbans-platinum-shield",
@@ -127,7 +127,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "flesh-to-stone",
@@ -140,7 +140,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "globe-of-invulnerability",
@@ -153,7 +153,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "guards-and-wards",
@@ -179,7 +179,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "investiture-of-ice",
@@ -192,7 +192,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "investiture-of-stone",
@@ -205,7 +205,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "investiture-of-wind",
@@ -218,7 +218,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "magic-jar",
@@ -257,7 +257,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "move-earth",
@@ -270,7 +270,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "otilukes-freezing-sphere",
@@ -296,7 +296,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "programmed-illusion",
@@ -348,7 +348,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "sunbeam",
@@ -361,7 +361,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "tashas-otherworldly-guise",
@@ -374,7 +374,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "tensers-transformation",
@@ -387,7 +387,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "true-seeing",
@@ -413,6 +413,6 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     }
 ]

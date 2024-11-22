@@ -10,7 +10,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "bigbys-hand",
@@ -23,7 +23,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "circle-of-power",
@@ -36,7 +36,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "cloudkill",
@@ -49,7 +49,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "cone-of-cold",
@@ -75,7 +75,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "contact-other-plane",
@@ -87,7 +87,7 @@
         "area_type": "None",
         "dtype": "None",
         "condition": "None",
-        "ritual": false,
+        "ritual": true,
         "concentration": false
     },
     {
@@ -101,7 +101,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "create-spelljamming-helm",
@@ -140,7 +140,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "dawn",
@@ -153,7 +153,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "dominate-person",
@@ -166,7 +166,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "dream",
@@ -192,7 +192,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "far-step",
@@ -205,7 +205,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "geas",
@@ -231,7 +231,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "immolation",
@@ -244,7 +244,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "infernal-calling",
@@ -257,7 +257,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "jallarzis-storm-of-radiance",
@@ -270,7 +270,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "legend-lore",
@@ -296,7 +296,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "modify-memory",
@@ -309,7 +309,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "negative-energy-flood",
@@ -360,7 +360,7 @@
         "area_type": "None",
         "dtype": "None",
         "condition": "None",
-        "ritual": false,
+        "ritual": true,
         "concentration": false
     },
     {
@@ -374,7 +374,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "seeming",
@@ -400,7 +400,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "steel-wind-strike",
@@ -426,7 +426,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "summon-dragon",
@@ -465,7 +465,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "teleportation-circle",
@@ -504,7 +504,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "wall-of-light",
@@ -517,7 +517,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "wall-of-stone",
@@ -530,7 +530,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     },
     {
         "id": "yolandes-regal-presence",
@@ -543,6 +543,6 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": true
     }
 ]

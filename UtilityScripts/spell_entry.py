@@ -1,8 +1,7 @@
 import json
 from typing import Dict
 
-# USAGE: Note that you will need to go manually fill each concentration and ritual field as 
-# it's easier there, this tool doesn't fill it out
+# USAGE: This does not prompt for concentration or ritual as I filled those in by hand
 
 def get_input_with_default(prompt: str, current_value: str) -> str:
     user_input = input(f"{prompt} [{current_value}]: ")
