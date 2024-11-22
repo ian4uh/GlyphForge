@@ -1,0 +1,16 @@
+None
+Blinded
+Charmed
+Deafened
+Exhaustion
+Frightened
+Grappled
+Incapaticated
+Invisible
+Paralyzed
+Petrified
+Poisoned
+Prone
+Restrained
+Stunned
+Unconscious

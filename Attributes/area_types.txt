@@ -1,38 +1,36 @@
 None
-Cone15
-Cone30
-Cone40
-Cone60
-Cube1
-Cube10
-Cube100
-Cube15
-Cube150
-Cube20
-Cube200
-Cube2500
-Cube30
-Cube40
-Cube40000
-Cube5
-Cube5280
-Cylinder10
-Cylinder20
-Cylinder40
-Cylinder5
-Cylinder50
-Cylinder60
-Line100
-Line50
-Line60
-Line90
-Sphere10
-Sphere100
-Sphere15
-Sphere20
-Sphere30
-Sphere360
-Sphere40
-Sphere5
-Sphere60
-Square10
+cone (15)
+cone (30)
+cone (40)
+cone (60)
+cube (10)
+cube (100)
+cube (15)
+cube (150)
+cube (20)
+cube (200)
+cube (2500)
+cube (30)
+cube (40)
+cube (40000)
+cube (5)
+cube (5280)
+cylinder (10)
+cylinder (20)
+cylinder (40)
+cylinder (5)
+cylinder (50)
+cylinder (60)
+line (100)
+line (50)
+line (60)
+line (90)
+sphere (10)
+sphere (100)
+sphere (15)
+sphere (20)
+sphere (30)
+sphere (360)
+sphere (40)
+sphere (5)
+sphere (60)
