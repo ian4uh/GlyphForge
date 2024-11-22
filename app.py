@@ -298,7 +298,7 @@ class SpellApp:
                 spell['range'] == rang and
                 spell['area_type'] == area and
                 spell['dtype'] == dtype and
-                #spell['condition'] == condition and
+                spell['condition'] == condition and
                 spell['concentration'] == concentration and
                 spell['ritual'] == ritual):
                 return spell['name']
