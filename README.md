@@ -16,6 +16,23 @@ I have the app where conditions exist - however I think this might not be needed
 
 But first I have to catalog all the currently available spells which is draining my soul
 
+## Issues
+There are spells that are basically identical, even with conditions and casting time
+```
+Spells with attributes:
+Level: 0
+School: Evocation
+Duration: Instantaneous
+Range: 60 feet
+Area Type: None
+Damage Type: Cold
+Concentration: False
+Ritual: False
+Matching spells: Frostbite, Ray of Frost
+```
+And so I have to find a way to add unique identifiers. I've only finished cantrips but I imagine this will be common considering that there are only 32 cantrips and other levels like Level 2 have 61. 
+
+
 # Primary Tasks
 - [X] Update to work with draw_spell_2 from original project
 - [X] Standardize the Attributes

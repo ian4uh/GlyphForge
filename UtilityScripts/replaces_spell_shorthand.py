@@ -1,6 +1,9 @@
 import json
 import os
 
+# This script is used to go through the files I make and replace the shorthand of what I write
+# mainly so I don't write each school of magic a million times
+
 def format_school(school_code):
     school_mapping = {
         'a': 'Abjuration',
@@ -20,7 +23,7 @@ def format_duration(duration):
     return duration
 
 # Process all JSON files in EmptySpells directory
-directory = 'EmptySpells'
+directory = 'Grimoire'
 for filename in os.listdir(directory):
     if filename.endswith('.json'):
         file_path = os.path.join(directory, filename)

@@ -288,7 +288,7 @@ class SpellApp:
     # Eventually all the spells will be in one file 
     ## This might cause search times but we'll see when it's finished
     def find_matching_spell(self, level, rang, area, dtype, school, duration, condition, concentration, ritual):
-        with open('wizard_cantrips.json', 'r') as file:
+        with open('Grimoire/wizard_cantrips.json', 'r') as file:
             spells = json.load(file)
         
         for spell in spells:
@@ -298,12 +298,11 @@ class SpellApp:
                 spell['range'] == rang and
                 spell['area_type'] == area and
                 spell['dtype'] == dtype and
-                spell['condition'] == condition and
+                #spell['condition'] == condition and
                 spell['concentration'] == concentration and
                 spell['ritual'] == ritual):
                 return spell['name']
         return None
-
 
 if __name__ == "__main__":
     root = tk.Tk()

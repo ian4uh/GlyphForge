@@ -1,6 +1,9 @@
 import json
 import os
 
+# This just resets all the spells in the directory 
+# I kept messing or changing format up and didn't want to remake them entirely
+
 directory = 'EmptySpells'
 
 # Process each JSON file in the directory

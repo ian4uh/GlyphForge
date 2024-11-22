@@ -2,6 +2,8 @@ import re
 import json
 import os
 
+# This was just a script to make all the jsons based off the spell IDs
+
 def create_empty_spell_template():
     return {
         "id": "",
