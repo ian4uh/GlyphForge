@@ -43,7 +43,7 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
 # Secondary Tasks
 - [ ] Make a catalog of all spells and their attributes
 - [ ] Allow users to search for spell and return glyph
-- [ ] Have generated glyph return spell
+- [ ] Have generated glyph return spell (ONLY WORKS FOR CANTRIPS CURRENTLY)
     - [X] Cantrips
     - [X] 1st Level
     - [ ] 2nd Level
