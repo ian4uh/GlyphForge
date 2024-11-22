@@ -1,6 +1,9 @@
 import json
 from typing import Dict
 
+# USAGE: Note that you will need to go manually fill each concentration and ritual field as 
+# it's easier there, this tool doesn't fill it out
+
 def get_input_with_default(prompt: str, current_value: str) -> str:
     user_input = input(f"{prompt} [{current_value}]: ")
     return user_input if user_input.strip() else current_value
