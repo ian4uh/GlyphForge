@@ -2,7 +2,7 @@ import json
 
 def find_duplicate_spells():
     # Load the spells from JSON
-    with open('Grimoire\wizard_cantrips.json', 'r') as file:
+    with open('Grimoire\wizard_1.json', 'r') as file:
         spells = json.load(file)
     
     # Dictionary to store spells with same attributes

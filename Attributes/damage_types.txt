@@ -12,3 +12,4 @@ Psychic
 Radiant
 Slashing
 Thunder
+Multiple

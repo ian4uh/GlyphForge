@@ -32,7 +32,6 @@ Matching spells: Frostbite, Ray of Frost
 ```
 And so I have to find a way to add unique identifiers. I've only finished cantrips but I imagine this will be common considering that there are only 32 cantrips and other levels like Level 2 have 61. 
 
-
 # Primary Tasks
 - [X] Update to work with draw_spell_2 from original project
 - [X] Standardize the Attributes
@@ -46,7 +45,7 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
 - [ ] Allow users to search for spell and return glyph
 - [ ] Have generated glyph return spell
     - [X] Cantrips
-    - [ ] 1st Level
+    - [X] 1st Level
     - [ ] 2nd Level
     - [ ] 3rd Level
     - [ ] 4th Level
@@ -56,6 +55,8 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [ ] 8th Level
     - [ ] 9th Level
 
+## Contriubte
+Feel free to use the `spell_entry.py` tool to help fill out the Grimoire. You can also use the `find_duplicates.py` file to find duplicate spells, but note this doesn't check conditions as this is meant to be a testing tool for later to find how many spells have duplicates before and after concentration is considered.
 
 # DISCLAIMER
 I did not create any of the algorithms used in the backend of this program. I exclusively made the GUI and assembled the JSONs used in the spell lookup. Aside from slight modifications, I have done nothing to the `bases.py`, `line_shapes.py`, and `writer.py` files.
