@@ -42,8 +42,6 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
 
 # Secondary Tasks
 - [ ] Make a catalog of all spells and their attributes
-- [ ] Allow users to search for spell and return glyph
-- [ ] Have generated glyph return spell (ONLY WORKS FOR CANTRIPS CURRENTLY)
     - [X] Cantrips
     - [X] 1st Level
     - [ ] 2nd Level
@@ -54,6 +52,9 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [ ] 7th Level
     - [ ] 8th Level
     - [ ] 9th Level
+- [ ] Allow users to search for spell and return glyph
+- [ ] Have generated glyph return spell (ONLY WORKS FOR CANTRIPS CURRENTLY)
+
 
 ## Contriubte
 Feel free to use the `spell_entry.py` tool to help fill out the Grimoire. You can also use the `find_duplicates.py` file to find duplicate spells, but note this doesn't check conditions as this is meant to be a testing tool for later to find how many spells have duplicates before and after concentration is considered.
