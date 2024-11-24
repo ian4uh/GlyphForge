@@ -14,3 +14,4 @@ Prone
 Restrained
 Stunned
 Unconscious
+Multiple
