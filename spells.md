@@ -37,7 +37,7 @@
 - true-strike
 </details>
 
-<details><summary>Level 1: 41</summary>
+<details><summary>Level 1: 41 - finished</summary>
 
 - absorb-elements
 - alarm
@@ -83,7 +83,7 @@
 
 </details>
 
-<details><summary>Level 2: 61</summary>
+<details><summary>Level 2: 61 - finished</summary>
 
 - aganazzars-scorcher
 - air-bubble
@@ -403,4 +403,4 @@
 </details>
 
 ## Total: 353
-### Remaining: 321
+### Remaining: 219

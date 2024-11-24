@@ -1,19 +1,89 @@
 # Level 0
 
+Spells with attributes:
+School: Transmutation
+Duration: Instantaneous
+Range: 30 feet
+Area Type: cube (5)
+Damage Type: None
+Condition: None
+Concentration: False
+Ritual: False
+Matching spells: Elementalism, Mold Earth, Shape Water
+--------------------------------------------------
+
+Spells with attributes:
+School: Evocation
+Duration: Instantaneous
+Range: 60 feet
+Area Type: None
+Damage Type: Cold
+Condition: None
+Concentration: False
+Ritual: False
+Matching spells: Frostbite, Ray of Frost
+--------------------------------------------------
+
 # Level 1
 
-# Level 2 
+Spells with attributes:
+School: Evocation
+Duration: Instantaneous
+Range: 120 feet
+Area Type: None
+Damage Type: Force
+Condition: None
+Concentration: False
+Ritual: False
+Matching spells: Jims Magic Missile, Magic Missle
+--------------------------------------------------
 
-# Level 3
+# Level 2
 
-# Level 4
+Spells with attributes:
+School: Divination
+Duration: 1 hour
+Range: Self
+Area Type: None
+Damage Type: None
+Condition: None
+Concentration: False
+Ritual: False
+Matching spells: Borrowed Knowledge, See Invisibility
+--------------------------------------------------
 
-# Level 5
+Spells with attributes:
+School: Divination
+Duration: 1 minute
+Range: Self
+Area Type: None
+Damage Type: None
+Condition: None
+Concentration: True
+Ritual: False
+Matching spells: Detect Thoughts, Warp Sense
+--------------------------------------------------
 
-# Level 6
+Spells with attributes:
+School: Transmutation
+Duration: 1 hour
+Range: Touch
+Area Type: None
+Damage Type: None
+Condition: None
+Concentration: True
+Ritual: False
+Matching spells: Enhance Ability, Spider Climb
+--------------------------------------------------
 
-# Level 7
-
-# Level 8
-
-# Level 9
+Spells with attributes:
+School: Transmutation
+Duration: 1 hour
+Range: Touch
+Area Type: None
+Damage Type: None
+Condition: None
+Concentration: False
+Ritual: False
+Matching spells: Magic Weapon, Rope Trick
+--------------------------------------------------

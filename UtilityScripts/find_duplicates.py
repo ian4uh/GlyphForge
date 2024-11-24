@@ -35,6 +35,7 @@ def find_duplicate_spells():
                     spell['range'],
                     spell['area_type'],
                     spell['dtype'],
+                    spell['condition'],
                     spell['concentration'],
                     spell['ritual']
                 )
@@ -54,8 +55,9 @@ def find_duplicate_spells():
                     duplicate_info.append(f"Range: {key[2]}")
                     duplicate_info.append(f"Area Type: {key[3]}")
                     duplicate_info.append(f"Damage Type: {key[4]}")
-                    duplicate_info.append(f"Concentration: {key[5]}")
-                    duplicate_info.append(f"Ritual: {key[6]}")
+                    duplicate_info.append(f"Condition: {key[5]}")
+                    duplicate_info.append(f"Concentration: {key[6]}")
+                    duplicate_info.append(f"Ritual: {key[7]}")
                     duplicate_info.append(f"Matching spells: {', '.join(names)}")
                     duplicate_info.append("-" * 50)
             
