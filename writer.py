@@ -156,7 +156,6 @@ def draw_spell(level, rang, area, dtype, school, duration, condition,
     durations = load_attribute("Attributes/duration.txt")
     conditions = load_attribute("Attributes/conditions.txt")
     
-    
     # Find indices for the attributes and uses lowercases values
     i_range = [r.lower() for r in ranges].index(rang.lower())
     i_levels = levels.index(str(level))
@@ -164,18 +163,17 @@ def draw_spell(level, rang, area, dtype, school, duration, condition,
     i_dtype = [dt.lower() for dt in dtypes].index(dtype.lower())
     i_school = [s.lower() for s in schools].index(school.lower())
     i_duration = [d.lower() for d in durations].index(duration.lower())
-        
-    
-    if include_conditions and condition != 'None':
-        i_condition = [ct.lower() for ct in conditions].index(condition.lower())
-        attributes = [i_levels, i_school, i_dtype, i_area, i_range, i_duration, i_condition]
-        labels = [f"level: {level}", f"school: {school}", f"duration: {duration}", 
-                 f"range: {rang}", f"area_type: {area}", f"damage type: {dtype}", 
-                 f"condition time: {condition}"]
-    else:
-        attributes = [i_levels, i_school, i_dtype, i_area, i_range, i_duration]
-        labels = [f"level: {level}", f"school: {school}", f"duration: {duration}", 
-                 f"range: {rang}", f"area_type: {area}", f"damage type: {dtype}"]
+    i_condition = [ct.lower() for ct in conditions].index(condition.lower())
+
+    # Always include all attributes in consistent order
+    attributes = [i_levels, i_school, i_duration, i_range, i_area, i_dtype, i_condition]
+    labels = [f"Level: {level}", 
+             f"School: {school}", 
+             f"Duration: {duration}", 
+             f"Range: {rang}", 
+             f"Area Type: {area}", 
+             f"Damage Type: {dtype}",
+             f"Condition: {condition}"]
     N = 2 * len(attributes) + 1
     
     # Handle breakdown coloring
