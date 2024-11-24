@@ -32,6 +32,11 @@ Matching spells: Frostbite, Ray of Frost
 ```
 And so I have to find a way to add unique identifiers. I've only finished cantrips but I imagine this will be common considering that there are only 32 cantrips and other levels like Level 2 have 61. 
 
+### Possible Solutions:
+- Add conditions spells inflict - Currently testing - unlikely to succeed
+- add damage of spells
+- Add casting time of spells (unlikely)
+
 # Primary Tasks
 - [X] Update to work with draw_spell_2 from original project
 - [X] Standardize the Attributes
