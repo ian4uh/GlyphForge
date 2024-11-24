@@ -39,6 +39,11 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - Doesn't work with spells that don't have damage (`Elementalism`, `Mold Earth`, `Shape Water`)
 - Add casting time of spells (unlikely)
     - Most casting spells take 1 action
+- Add category of spell
+    - Control, Communication, Detection, Deception, etc.
+    - This might be the best solution and may be able to be implemented without adding a whole set of attributes
+        - Possibly just modifying the image to have a characteristic depending on the category
+            - Will likely be difficult if different line type or base shape is used because I am bad at algorithms
 
 # Primary Tasks
 - [X] Update to work with draw_spell_2 from original project
@@ -52,7 +57,7 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
 - [ ] Make a catalog of all spells and their attributes
     - [X] Cantrips
     - [X] 1st Level
-    - [ ] 2nd Level
+    - [X] 2nd Level
     - [ ] 3rd Level
     - [ ] 4th Level
     - [ ] 5th Level
@@ -65,9 +70,8 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
 
 
 ## Contriubte
-Feel free to use the `spell_entry.py` tool to help fill out the Grimoire. You can also use the `find_duplicates.py` file to find duplicate spells, but note this doesn't check conditions as this is meant to be a testing tool for later to find how many spells have duplicates before and after concentration is considered.
-
+Feel free to use the `spell_entry.py` tool to help fill out the Grimoire. The `find_duplicates.py` file is to be used once all the spells have been entered to find all the duplicates so that further modifications can be made to the spell entries.
 # DISCLAIMER
-I did not create any of the algorithms used in the backend of this program. I exclusively made the GUI and assembled the JSONs used in the spell lookup. Aside from slight modifications, I have done nothing to the `bases.py`, `line_shapes.py`, and `writer.py` files.
+I did not create any of the algorithms used in the backend of this program. I exclusively made the GUI and assembled the JSONs used in the spell lookup. Aside from slight modifications, I have done nothing to the `bases.py` and `line_shapes.py`. I have made a number of changes to `writer.py`, but the majority is still the original code.
 
 
