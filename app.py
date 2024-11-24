@@ -79,30 +79,30 @@ class SpellApp:
         school_dropdown = ttk.Combobox(top_frame, textvariable=self.school_var, values=self.schools)
         school_dropdown.grid(row=1, column=1, padx=5)
 
-        # Condition dropdown
-        ttk.Label(top_frame, text="Select Conditions:").grid(row=0, column=2)
-        condition_dropdown = ttk.Combobox(top_frame, textvariable=self.condition_var, values=self.conditions)
-        condition_dropdown.grid(row=1, column=2, padx=5)
-
         # Duration dropdown
-        ttk.Label(top_frame, text="Select Duration:").grid(row=0, column=3)
+        ttk.Label(top_frame, text="Select Duration:").grid(row=0, column=2)
         duration_dropdown = ttk.Combobox(top_frame, textvariable=self.duration_var, values=self.durations)
-        duration_dropdown.grid(row=1, column=3, padx=5)
+        duration_dropdown.grid(row=1, column=2, padx=5)
 
         # Range dropdown
-        ttk.Label(top_frame, text="Select Range:").grid(row=0, column=4)
+        ttk.Label(top_frame, text="Select Range:").grid(row=0, column=3)
         range_dropdown = ttk.Combobox(top_frame, textvariable=self.range_var, values=self.ranges)
-        range_dropdown.grid(row=1, column=4, padx=5)
+        range_dropdown.grid(row=1, column=3, padx=5)
 
         # Area dropdown
-        ttk.Label(top_frame, text="Select Area Type:").grid(row=0, column=5)
+        ttk.Label(top_frame, text="Select Area Type:").grid(row=0, column=4)
         area_dropdown = ttk.Combobox(top_frame, textvariable=self.area_var, values=self.areas)
-        area_dropdown.grid(row=1, column=5, padx=5)
+        area_dropdown.grid(row=1, column=4, padx=5)
 
         # Damage Type dropdown
-        ttk.Label(top_frame, text="Select Damage Type:").grid(row=0, column=6)
+        ttk.Label(top_frame, text="Select Damage Type:").grid(row=0, column=5)
         dtype_dropdown = ttk.Combobox(top_frame, textvariable=self.dtype_var, values=self.dtypes)
-        dtype_dropdown.grid(row=1, column=6, padx=5)
+        dtype_dropdown.grid(row=1, column=5, padx=5)
+
+        # Condition dropdown
+        ttk.Label(top_frame, text="Select Conditions:").grid(row=0, column=6)
+        condition_dropdown = ttk.Combobox(top_frame, textvariable=self.condition_var, values=self.conditions)
+        condition_dropdown.grid(row=1, column=6, padx=5)
 
         # Concentration dropdown
         ttk.Label(bottom_frame, text="Concentration:").grid(row=0, column=0)
