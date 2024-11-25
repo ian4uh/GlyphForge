@@ -255,6 +255,14 @@ class SpellApp:
         shape = random.choice([bases.polygon, bases.quadratic, bases.circle, bases.cubic, bases.golden])
         lineType = random.choice([line_shapes.centre_circle, line_shapes.straight])
 
+        # To prevent poor looking shapes from being randomly generated
+        if (concentration or ritual) and shape == bases.circle:
+            shape = bases.polygon
+        if ritual and shape == bases.quadratic:
+            shape = bases.polygon
+        if lineType == line_shapes.straight and (shape == bases.quadratic or shape == bases.cubic):
+            shape = bases.polygon
+
         # Convert the level to lowercase in case of "None"
         level = level.lower()
 
