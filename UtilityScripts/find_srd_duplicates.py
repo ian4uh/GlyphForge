@@ -52,7 +52,8 @@ def find_duplicate_spells():
             duplicate_info = []
             for key, names in spell_groups.items():
                 if len(names) > 1:
-                    duplicate_info.append(f"\nSpells with attributes:")
+                    duplicate_info.append("\n```")
+                    duplicate_info.append("Spells with attributes:")
                     duplicate_info.append(f"School: {key[0]}")
                     duplicate_info.append(f"Duration: {key[1]}")
                     duplicate_info.append(f"Range: {key[2]}")
@@ -62,7 +63,7 @@ def find_duplicate_spells():
                     duplicate_info.append(f"Concentration: {key[6]}")
                     duplicate_info.append(f"Ritual: {key[7]}")
                     duplicate_info.append(f"Matching spells: {', '.join(names)}")
-                    duplicate_info.append("-" * 50)
+                    duplicate_info.append("```")
             
             # Write to file if duplicates found
             if duplicate_info:

@@ -2,6 +2,7 @@
 
 # Level 2
 
+```
 Spells with attributes:
 School: Transmutation
 Duration: 1 hour
@@ -12,5 +13,5 @@ Condition: None
 Concentration: False
 Ritual: False
 Matching spells: Magic Weapon, Rope Trick
---------------------------------------------------
+```
 

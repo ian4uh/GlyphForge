@@ -15,9 +15,9 @@ def find_duplicate_spells():
         'wizard_9.json': '# Level 9'
     }
     
-    # Read existing content from duplicates.md
-    with open('duplicates.md', 'r') as file:
-        content = file.read()
+    # Initialize duplicates.md with header
+    with open('duplicates.md', 'w') as file:
+        file.write("# Spell Duplicates\n")
     
     # Process each spell level file
     for json_file, header in level_map.items():
@@ -49,7 +49,8 @@ def find_duplicate_spells():
             duplicate_info = []
             for key, names in spell_groups.items():
                 if len(names) > 1:
-                    duplicate_info.append(f"\nSpells with attributes:")
+                    duplicate_info.append("\n```")
+                    duplicate_info.append(f"Spells with attributes:")
                     duplicate_info.append(f"School: {key[0]}")
                     duplicate_info.append(f"Duration: {key[1]}")
                     duplicate_info.append(f"Range: {key[2]}")
@@ -59,25 +60,17 @@ def find_duplicate_spells():
                     duplicate_info.append(f"Concentration: {key[6]}")
                     duplicate_info.append(f"Ritual: {key[7]}")
                     duplicate_info.append(f"Matching spells: {', '.join(names)}")
-                    duplicate_info.append("-" * 50)
+                    duplicate_info.append("```")
             
-            # Replace content between current header and next header
+            # Write to file if duplicates found
             if duplicate_info:
-                start_idx = content.find(header)
-                next_header_idx = content.find('#', start_idx + 1)
-                if next_header_idx == -1:
-                    next_header_idx = len(content)
-                    
-                content = (content[:start_idx] + header + '\n' + 
-                          '\n'.join(duplicate_info) + '\n\n' +
-                          content[next_header_idx:])
+                with open('duplicates.md', 'a') as file:
+                    file.write(f"\n{header}\n")
+                    file.write('\n'.join(duplicate_info))
+                    file.write('\n')
                 
         except FileNotFoundError:
             continue
-    
-    # Write updated content back to duplicates.md
-    with open('duplicates.md', 'w') as file:
-        file.write(content)
 
 if __name__ == "__main__":
     find_duplicate_spells()

@@ -1,5 +1,8 @@
+# Spell Duplicates
+
 # Level 0
 
+```
 Spells with attributes:
 School: Transmutation
 Duration: Instantaneous
@@ -10,8 +13,9 @@ Condition: None
 Concentration: False
 Ritual: False
 Matching spells: Elementalism, Mold Earth, Shape Water
---------------------------------------------------
+```
 
+```
 Spells with attributes:
 School: Evocation
 Duration: Instantaneous
@@ -22,10 +26,11 @@ Condition: None
 Concentration: False
 Ritual: False
 Matching spells: Frostbite, Ray of Frost
---------------------------------------------------
+```
 
 # Level 1
 
+```
 Spells with attributes:
 School: Evocation
 Duration: Instantaneous
@@ -36,10 +41,11 @@ Condition: None
 Concentration: False
 Ritual: False
 Matching spells: Jims Magic Missile, Magic Missle
---------------------------------------------------
+```
 
 # Level 2
 
+```
 Spells with attributes:
 School: Divination
 Duration: 1 hour
@@ -50,8 +56,9 @@ Condition: None
 Concentration: False
 Ritual: False
 Matching spells: Borrowed Knowledge, See Invisibility
---------------------------------------------------
+```
 
+```
 Spells with attributes:
 School: Divination
 Duration: 1 minute
@@ -62,8 +69,9 @@ Condition: None
 Concentration: True
 Ritual: False
 Matching spells: Detect Thoughts, Warp Sense
---------------------------------------------------
+```
 
+```
 Spells with attributes:
 School: Transmutation
 Duration: 1 hour
@@ -74,8 +82,9 @@ Condition: None
 Concentration: True
 Ritual: False
 Matching spells: Enhance Ability, Spider Climb
---------------------------------------------------
+```
 
+```
 Spells with attributes:
 School: Transmutation
 Duration: 1 hour
@@ -86,4 +95,4 @@ Condition: None
 Concentration: False
 Ritual: False
 Matching spells: Magic Weapon, Rope Trick
---------------------------------------------------
+```
