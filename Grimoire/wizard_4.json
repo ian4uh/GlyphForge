@@ -10,7 +10,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "banishment",
@@ -23,7 +24,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "blight",
@@ -36,7 +38,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "charm-monster",
@@ -49,7 +52,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "confusion",
@@ -62,7 +66,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "conjure-minor-elementals",
@@ -75,7 +80,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "control-water",
@@ -88,7 +94,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "dimension-door",
@@ -101,7 +108,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "divination",
@@ -114,7 +122,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "elemental-bane",
@@ -127,7 +136,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "evards-black-tentacles",
@@ -140,7 +150,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "fabricate",
@@ -153,7 +164,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "fire-shield",
@@ -166,7 +178,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "galders-speedy-courier",
@@ -179,7 +192,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "gate-seal",
@@ -192,7 +206,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "greater-invisibility",
@@ -205,7 +220,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "hallucinatory-terrain",
@@ -218,7 +234,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "ice-storm",
@@ -231,7 +248,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "leomunds-secret-chest",
@@ -244,7 +262,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "locate-creature",
@@ -257,7 +276,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "mordenkainens-faithful-hound",
@@ -270,7 +290,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "mordenkainens-private-sanctum",
@@ -283,7 +304,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "otilukes-resilient-sphere",
@@ -296,7 +318,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "phantasmal-killer",
@@ -309,7 +332,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "polymorph",
@@ -322,7 +346,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "raulothims-psychic-lance",
@@ -335,7 +360,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "sickening-radiance",
@@ -348,7 +374,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "spirit-of-death",
@@ -361,7 +388,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "stone-shape",
@@ -374,7 +402,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "stoneskin",
@@ -387,7 +416,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "storm-sphere",
@@ -400,7 +430,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "summon-aberration",
@@ -413,7 +444,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "summon-construct",
@@ -426,7 +458,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "summon-elemental",
@@ -439,7 +472,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "summon-greater-demon",
@@ -452,7 +486,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "vitriolic-sphere",
@@ -465,7 +500,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "wall-of-fire",
@@ -478,7 +514,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "watery-sphere",
@@ -491,6 +528,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     }
 ]

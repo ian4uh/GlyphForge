@@ -10,7 +10,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "antagonize",
@@ -23,7 +24,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "ashardalons-stride",
@@ -36,7 +38,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "bestow-curse",
@@ -49,7 +52,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "blink",
@@ -62,7 +66,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "catnap",
@@ -75,7 +80,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "clairvoyance",
@@ -88,7 +94,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "counterspell",
@@ -101,7 +108,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "dispel-magic",
@@ -114,7 +122,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "enemies-abound",
@@ -127,7 +136,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "erupting-earth",
@@ -140,7 +150,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "fast-friends",
@@ -153,7 +164,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "fear",
@@ -166,7 +178,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "feign-death",
@@ -179,7 +192,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "fireball",
@@ -192,7 +206,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "flame-arrows",
@@ -205,7 +220,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "fly",
@@ -218,7 +234,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "galders-tower",
@@ -231,7 +248,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "gaseous-form",
@@ -244,7 +262,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "glyph-of-warding",
@@ -257,7 +276,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "haste",
@@ -270,7 +290,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "hypnotic-pattern",
@@ -283,7 +304,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "incite-greed",
@@ -296,7 +318,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "intellect-fortress",
@@ -309,7 +332,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "leomunds-tiny-hut",
@@ -322,7 +346,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "life-transference",
@@ -335,7 +360,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "lightning-bolt",
@@ -348,7 +374,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "magic-circle",
@@ -361,7 +388,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "major-image",
@@ -374,7 +402,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "melfs-minute-meteors",
@@ -387,7 +416,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "nondetection",
@@ -400,7 +430,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "phantom-steed",
@@ -413,7 +444,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "protection-from-energy",
@@ -426,7 +458,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "remove-curse",
@@ -439,7 +472,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "sending",
@@ -452,7 +486,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "sleet-storm",
@@ -465,7 +500,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "slow",
@@ -478,7 +514,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "speak-with-dead",
@@ -491,7 +528,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "spirit-shroud",
@@ -504,7 +542,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "stinking-cloud",
@@ -517,7 +556,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "summon-fey",
@@ -530,7 +570,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "summon-lesser-demon",
@@ -543,7 +584,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "summon-shadowspawn",
@@ -556,7 +598,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "summon-undead",
@@ -569,7 +612,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "thunder-step",
@@ -582,7 +626,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "tidal-wave",
@@ -595,7 +640,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "tiny-servant",
@@ -608,7 +654,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "tongues",
@@ -621,7 +668,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "vampiric-touch",
@@ -634,7 +682,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "wall-of-sand",
@@ -647,7 +696,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "wall-of-water",
@@ -660,7 +710,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "water-breathing",
@@ -673,6 +724,7 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     }
 ]

@@ -10,7 +10,8 @@
         "dtype": "Multiple",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "alarm",
@@ -23,7 +24,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "burning-hands",
@@ -36,7 +38,8 @@
         "dtype": "Fire",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "catapult",
@@ -49,7 +52,8 @@
         "dtype": "Bludgeoning",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "cause-fear",
@@ -62,7 +66,8 @@
         "dtype": "None",
         "condition": "Frightened",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "charm-person",
@@ -75,7 +80,8 @@
         "dtype": "None",
         "condition": "Charmed",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "chromatic-orb",
@@ -88,7 +94,8 @@
         "dtype": "Multiple",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "color-spray",
@@ -101,7 +108,8 @@
         "dtype": "None",
         "condition": "Blinded",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "comprehend-languages",
@@ -114,7 +122,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "detect-magic",
@@ -127,7 +136,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "disguise-self",
@@ -140,7 +150,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "distort-value",
@@ -153,7 +164,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "earth-tremor",
@@ -166,7 +178,8 @@
         "dtype": "Bludgeoning",
         "condition": "Prone",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "expeditious-retreat",
@@ -179,7 +192,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "false-life",
@@ -192,7 +206,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "feather-fall",
@@ -205,7 +220,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "find-familiar",
@@ -218,7 +234,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "fog-cloud",
@@ -231,7 +248,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "frost-fingers",
@@ -244,7 +262,8 @@
         "dtype": "Cold",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "grease",
@@ -257,7 +276,8 @@
         "dtype": "None",
         "condition": "Prone",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "ice-knife",
@@ -270,7 +290,8 @@
         "dtype": "Piercing",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "identify",
@@ -283,7 +304,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "illusory-script",
@@ -296,7 +318,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "jims-magic-missile",
@@ -309,7 +332,8 @@
         "dtype": "Force",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "jump",
@@ -322,7 +346,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "longstrider",
@@ -335,7 +360,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "mage-armor",
@@ -348,7 +374,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "magic-missle",
@@ -361,7 +388,8 @@
         "dtype": "Force",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "protection-from-evil-and-good",
@@ -374,7 +402,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "ray-of-sickness",
@@ -387,7 +416,8 @@
         "dtype": "Poison",
         "condition": "Poisoned",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "shield",
@@ -400,7 +430,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "silent-image",
@@ -413,7 +444,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "silvery-barbs",
@@ -426,7 +458,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "sleep",
@@ -439,7 +472,8 @@
         "dtype": "None",
         "condition": "Unconscious",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "snare",
@@ -452,7 +486,8 @@
         "dtype": "None",
         "condition": "Restrained",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": false
     },
     {
         "id": "tashas-caustic-brew",
@@ -465,7 +500,8 @@
         "dtype": "Acid",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     },
     {
         "id": "tashas-hideous-laughter",
@@ -478,7 +514,8 @@
         "dtype": "None",
         "condition": "Incapacitated",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": true
     },
     {
         "id": "tensers-floating-disk",
@@ -491,7 +528,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "thunderwave",
@@ -504,7 +542,8 @@
         "dtype": "Thunder",
         "condition": "None",
         "ritual": false,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "unseen-servant",
@@ -517,7 +556,8 @@
         "dtype": "None",
         "condition": "None",
         "ritual": true,
-        "concentration": false
+        "concentration": false,
+        "srd": true
     },
     {
         "id": "witch-bolt",
@@ -530,6 +570,7 @@
         "dtype": "Lightning",
         "condition": "None",
         "ritual": false,
-        "concentration": true
+        "concentration": true,
+        "srd": false
     }
 ]
