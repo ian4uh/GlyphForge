@@ -1,4 +1,4 @@
-name: Update Requirements in README
+name: Update Python Requirements
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 permissions:
-  contents: write  # Allow commit changes
+  contents: write
 
 jobs:
   update-requirements:
@@ -24,28 +24,34 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: Install pipreqs and safety
         run: |
           python -m pip install --upgrade pip
-          pip install pipreqs
+          pip install pipreqs safety
 
       - name: Generate requirements.txt
         run: |
-          # Generate the requirements.txt file using pipreqs
-          pipreqs . --force
+          # Remove old requirements if exists
+          rm -f requirements.txt
+          # Generate fresh requirements from code analysis
+          pipreqs . --force --mode compat
+          # Install generated requirements
+          pip install -r requirements.txt
+          # Add any missing dependencies
+          pip install numpy matplotlib tk customtkinter
+          # Freeze all installed packages
+          pip freeze > requirements.txt
 
       - name: Update README.md
         run: |
-          # Extract the required libraries and format them into a pip install command
-          pip freeze > requirements.txt
-          # Replace the # Requirements section in README.md with the pip install command
-          sed -i "/# Requirements/,+1d" README.md
+          # Update Requirements section
+          sed -i '/# Requirements/,/```/d' README.md || true
           echo -e "\n# Requirements\n\n\`\`\`bash\npip install -r requirements.txt\n\`\`\`" >> README.md
 
       - name: Commit changes
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions@github.com"
-          git add README.md requirements.txt
-          git commit -m "Update Requirements section in README"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add requirements.txt README.md
+          git commit -m "Update Python requirements" || true
           git push
