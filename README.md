@@ -58,7 +58,7 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [X] Cantrips
     - [X] 1st Level
     - [X] 2nd Level
-    - [ ] 3rd Level
+    - [X] 3rd Level
     - [ ] 4th Level
     - [ ] 5th Level
     - [ ] 6th Level
