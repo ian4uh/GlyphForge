@@ -11,6 +11,12 @@ OR
 1. Run the `app.py` file
 2. Click the `Random Spell` button to generate a random glyph.
 
+# Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Current Development
 I have the app where conditions exist - however I think this might not be needed if this is restricted to just wizard spells which I am testing.
 
@@ -79,8 +85,4 @@ I did not create any of the algorithms used in the backend of this program. I ex
 pip install -r requirements.txt
 ```
 
-# Requirements
 
-```bash
-pip install -r requirements.txt
-```
