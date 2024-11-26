@@ -76,6 +76,9 @@ I did not create any of the algorithms used in the backend of this program. I ex
 
 
 
+pip install -r requirements.txt
+```
+
 # Requirements
 
 ```bash
