@@ -11,8 +11,6 @@ OR
 1. Run the `app.py` file
 2. Click the `Random Spell` button to generate a random glyph.
 
-# Requirements
-
 ## Current Development
 I have the app where conditions exist - however I think this might not be needed if this is restricted to just wizard spells which I am testing.
 
@@ -77,3 +75,9 @@ Feel free to use the `spell_entry.py` tool to help fill out the Grimoire. The `f
 I did not create any of the algorithms used in the backend of this program. I exclusively made the GUI and assembled the JSONs used in the spell lookup. Aside from slight modifications, I have done nothing to the `bases.py` and `line_shapes.py`. I have made a number of changes to `writer.py`, but the majority is still the original code.
 
 
+
+# Requirements
+
+```bash
+pip install -r requirements.txt
+```
