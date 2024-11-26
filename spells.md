@@ -149,7 +149,7 @@
 
 </details>
 
-<details><summary>Level 3: 52</summary>
+<details><summary>Level 3: 52 - finished</summary>
 
 - animate-dead
 - antagonize
@@ -403,4 +403,4 @@
 </details>
 
 ## Total: 353
-### Remaining: 219
+### Remaining: 167
