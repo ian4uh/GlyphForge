@@ -38,6 +38,26 @@ Matching spells: Frostbite, Ray of Frost
 ```
 And so I have to find a way to add unique identifiers. I've only finished cantrips but I imagine this will be common considering that there are only 32 cantrips and other levels like Level 2 have 61. 
 
+### Contains Duplicates:
+- [X] Level 0 (Cantrips) 
+    - [ ] SRD
+- [X] Level 1
+    - [ ] SRD
+- [X] Level 2
+    - [X] SRD
+- [X] Level 3
+    - [ ] SRD
+- [ ] Level 4
+    - [ ] SRD
+- [ ] Level 5
+    - [ ] SRD
+- [ ] Level 6
+    - [ ] SRD
+- [ ] Level 7
+    - [ ] SRD
+- [ ] Level 8 - **FREE OF DUPLICATES**
+- [ ] Level 9 - **FREE OF DUPLICATES**
+
 ### Possible Solutions:
 - Add conditions spells inflict 
     - Currently testing - unlikely to succeed
