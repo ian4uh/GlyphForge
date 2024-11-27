@@ -292,11 +292,26 @@ class SpellApp:
         self.image_label.config(image=photo)
         self.image_label.image = photo  # Keep a reference to avoid garbage collection
 
-    # This only checks against wizard_cantrips cause those are finished (probably)
-    # Eventually all the spells will be in one file 
-    ## This might cause search times but we'll see when it's finished
     def find_matching_spell(self, level, rang, area, dtype, school, duration, condition, concentration, ritual):
-        with open('Grimoire/wizard_cantrips.json', 'r') as file:
+        # Map level numbers to their corresponding json files
+        level_files = {
+            "0": "wizard_cantrips.json",
+            "1": "wizard_1.json", 
+            "2": "wizard_2.json",
+            "3": "wizard_3.json",
+            "4": "wizard_4.json",
+            "5": "wizard_5.json",
+            "6": "wizard_6.json",
+            "7": "wizard_7.json",
+            "8": "wizard_8.json",
+            "9": "wizard_9.json"
+        }
+        
+        # Get the correct file for the spell level
+        filename = level_files.get(level, "wizard_cantrips.json")
+        
+        # Load and search the appropriate spell file
+        with open(f'Grimoire/{filename}', 'r') as file:
             spells = json.load(file)
         
         for spell in spells:
@@ -311,7 +326,6 @@ class SpellApp:
                 spell['ritual'] == ritual):
                 return spell['name']
         return None
-
 if __name__ == "__main__":
     root = tk.Tk()
     app = SpellApp(root)
