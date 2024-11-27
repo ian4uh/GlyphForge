@@ -94,8 +94,3 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
 - [ ] Allow users to search for spell and return glyph
 - [ ] Have generated glyph return spell (ONLY WORKS FOR CANTRIPS CURRENTLY)
 
-
-## Contriubte
-Feel free to use the `spell_entry.py` tool to help fill out the Grimoire. The `find_duplicates.py` file is to be used once all the spells have been entered to find all the duplicates so that further modifications can be made to the spell entries.
-# DISCLAIMER
-I did not create any of the algorithms used in the backend of this program. I exclusively made the GUI and assembled the JSONs used in the spell lookup. Aside from slight modifications, I have done nothing to the `bases.py` and `line_shapes.py`. I have made a number of changes to `writer.py`, but the majority is still the original code.
