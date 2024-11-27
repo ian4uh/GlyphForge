@@ -359,7 +359,7 @@
 
 </details>
 
-<details><summary>Level 8: 17</summary>
+<details><summary>Level 8: 17 - finished</summary>
 
 - abi-dalzims-horrid-wilting
 - antimagic-field
@@ -381,7 +381,7 @@
 
 </details>
 
-<details><summary>Level 9: 16</summary>
+<details><summary>Level 9: 16 - finished</summary>
 
 - astral-projection
 - blade-of-disaster

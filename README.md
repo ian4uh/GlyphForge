@@ -69,8 +69,8 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [ ] 5th Level
     - [ ] 6th Level
     - [ ] 7th Level
-    - [ ] 8th Level
-    - [ ] 9th Level
+    - [X] 8th Level
+    - [X] 9th Level
 - [ ] Allow users to search for spell and return glyph
 - [ ] Have generated glyph return spell (ONLY WORKS FOR CANTRIPS CURRENTLY)
 

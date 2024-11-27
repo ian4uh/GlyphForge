@@ -101,7 +101,7 @@ Matching spells: Magic Weapon, Rope Trick
 
 ```
 Spells with attributes:
-School: c
+School: Conjuration
 Duration: 1 hour
 Range: 90 feet
 Area Type: None
@@ -111,4 +111,3 @@ Concentration: True
 Ritual: False
 Matching spells: Summon Fey, Summon Shadowspawn
 ```
-

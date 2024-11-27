@@ -14,4 +14,3 @@ Concentration: False
 Ritual: False
 Matching spells: Magic Weapon, Rope Trick
 ```
-
