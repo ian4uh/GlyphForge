@@ -79,8 +79,7 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [ ] SRD
 - [ ] Level 6
     - [ ] SRD
-- [ ] Level 7
-    - [ ] SRD
+- [ ] Level 7 - **FREE OF DUPLICATES**
 - [ ] Level 8 - **FREE OF DUPLICATES**
 - [ ] Level 9 - **FREE OF DUPLICATES**
 

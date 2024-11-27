@@ -333,7 +333,7 @@
 
 </details>
 
-<details><summary>Level 7: 21</summary>
+<details><summary>Level 7: 21 - finished</summary>
 
 - create-magen
 - crown-of-stars
@@ -403,4 +403,4 @@
 </details>
 
 ## Total: 353
-### Remaining: 167
+### Remaining: 113
