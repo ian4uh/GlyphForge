@@ -296,7 +296,7 @@
 
 </details>
 
-<details><summary>Level 6: 33</summary>
+<details><summary>Level 6: 33 - finished</summary>
 
 - arcane-gate
 - chain-lightning
@@ -403,4 +403,4 @@
 </details>
 
 ## Total: 353
-### Remaining: 113
+### Remaining: 80
