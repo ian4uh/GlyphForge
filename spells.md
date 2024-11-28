@@ -326,6 +326,7 @@
 - soul-cage
 - summon-fiend
 - sunbeam
+- tashas-bubbling-cauldron
 - tashas-otherworldly-guise
 - tensers-transformation
 - true-seeing
