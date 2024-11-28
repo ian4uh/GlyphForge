@@ -77,8 +77,7 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [ ] SRD
 - [ ] Level 5
     - [ ] SRD
-- [ ] Level 6
-    - [ ] SRD
+- [ ] Level 6 - **FREE OF DUPLICATES**
 - [ ] Level 7 - **FREE OF DUPLICATES**
 - [ ] Level 8 - **FREE OF DUPLICATES**
 - [ ] Level 9 - **FREE OF DUPLICATES**
@@ -112,8 +111,8 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [X] 3rd Level
     - [ ] 4th Level
     - [ ] 5th Level
-    - [ ] 6th Level
-    - [ ] 7th Level
+    - [X] 6th Level
+    - [X] 7th Level
     - [X] 8th Level
     - [X] 9th Level
 - [ ] Allow users to search for spell and return glyph

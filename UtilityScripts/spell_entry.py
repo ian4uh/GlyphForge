@@ -55,5 +55,5 @@ def spell_entry_wizard(file):
             break
 
 if __name__ == "__main__":
-    file = "Grimoire/wizard_7.json"
+    file = "Grimoire/wizard_6.json"
     spell_entry_wizard(file)
