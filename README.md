@@ -75,8 +75,7 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [ ] SRD
 - [ ] Level 4
     - [ ] SRD
-- [ ] Level 5
-    - [ ] SRD
+- [ ] Level 5 - **FREE OF DUPLICATES**
 - [ ] Level 6 - **FREE OF DUPLICATES**
 - [ ] Level 7 - **FREE OF DUPLICATES**
 - [ ] Level 8 - **FREE OF DUPLICATES**
@@ -103,7 +102,7 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
 - [X] Allow users to select line shape
 - [X] Randomly generate glyphs
 
-# Secondary Tasks
+## Secondary Tasks
 - [ ] Make a catalog of all spells and their attributes
     - [X] Cantrips
     - [X] 1st Level
@@ -116,7 +115,13 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [X] 8th Level
     - [X] 9th Level
 - [ ] Allow users to search for spell and return glyph
-- [ ] Have generated glyph return spell (ONLY WORKS FOR CANTRIPS CURRENTLY)
+- [X] Have generated glyph return spell
+
+## Tertiary Tasks
+- [ ] Be able to change random spell values after generation
+- [ ] Allow users to select colors
+    - [ ] Whole glyph
+    - [ ] Individual attributes
 
 # DISCLAIMER
 I did not create any of the algorithms used in the backend of this program. I exclusively made the GUI and assembled the JSONs used in the spell lookup. Aside from slight modifications, I have done nothing to the `bases.py` and `line_shapes.py`. I have made a number of changes to `writer.py`, but the majority is still the original code.

@@ -249,7 +249,7 @@
 
 </details>
 
-<details><summary>Level 5: 42</summary>
+<details><summary>Level 5: 42 - finished</summary>
 
 - animate-objects
 - bigbys-hand
@@ -404,4 +404,4 @@
 </details>
 
 ## Total: 353
-### Remaining: 80
+### Remaining: 38
