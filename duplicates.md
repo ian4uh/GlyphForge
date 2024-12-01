@@ -111,3 +111,33 @@ Concentration: True
 Ritual: False
 Matching spells: Summon Fey, Summon Shadowspawn
 ```
+
+# Level 4
+
+```
+Spells with attributes:
+School: Conjuration
+Duration: 1 hour
+Range: 90 feet
+Area Type: None
+Damage Type: None
+Condition: None
+Concentration: True
+Ritual: False
+Matching spells: Summon Aberration, Summon Construct, Summon Elemental
+```
+
+# Level 5
+
+```
+Spells with attributes:
+School: Conjuration
+Duration: 1 hour
+Range: 60 feet
+Area Type: None
+Damage Type: None
+Condition: None
+Concentration: True
+Ritual: False
+Matching spells: Summon Draconic Spirit, Summon Dragon
+```

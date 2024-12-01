@@ -206,7 +206,7 @@
 
 </details>
 
-<details><summary>Level 4: 38</summary>
+<details><summary>Level 4: 38 - finished</summary>
 
 - arcane-eye
 - banishment
@@ -404,4 +404,4 @@
 </details>
 
 ## Total: 353
-### Remaining: 38
+### Remaining: 0

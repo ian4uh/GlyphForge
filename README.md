@@ -73,7 +73,7 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
     - [X] SRD
 - [X] Level 3
     - [ ] SRD
-- [ ] Level 4
+- [X] Level 4
     - [ ] SRD
 - [ ] Level 5 - **FREE OF DUPLICATES**
 - [ ] Level 6 - **FREE OF DUPLICATES**
@@ -103,13 +103,13 @@ And so I have to find a way to add unique identifiers. I've only finished cantri
 - [X] Randomly generate glyphs
 
 ## Secondary Tasks
-- [ ] Make a catalog of all spells and their attributes
+- [X] Make a catalog of all spells and their attributes
     - [X] Cantrips
     - [X] 1st Level
     - [X] 2nd Level
     - [X] 3rd Level
-    - [ ] 4th Level
-    - [ ] 5th Level
+    - [X] 4th Level
+    - [X] 5th Level
     - [X] 6th Level
     - [X] 7th Level
     - [X] 8th Level

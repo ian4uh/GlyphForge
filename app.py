@@ -272,7 +272,7 @@ class SpellApp:
         # Check for matching spell
         matching_spell = self.find_matching_spell(level, rang, area, dtype, school, duration, condition, concentration, ritual)
         if matching_spell:
-            self.spell_name_label.config(text=f"Matching Spell: {matching_spell}")
+            self.spell_name_label.config(text=f"Matching Spells: {matching_spell}")
         else:
             self.spell_name_label.config(text="Spell does not exist... yet")
 
@@ -293,7 +293,6 @@ class SpellApp:
         self.image_label.image = photo  # Keep a reference to avoid garbage collection
 
     def find_matching_spell(self, level, rang, area, dtype, school, duration, condition, concentration, ritual):
-        # Map level numbers to their corresponding json files
         level_files = {
             "0": "wizard_cantrips.json",
             "1": "wizard_1.json", 
@@ -307,10 +306,9 @@ class SpellApp:
             "9": "wizard_9.json"
         }
         
-        # Get the correct file for the spell level
         filename = level_files.get(level, "wizard_cantrips.json")
+        matching_spells = []
         
-        # Load and search the appropriate spell file
         with open(f'Grimoire/{filename}', 'r') as file:
             spells = json.load(file)
         
@@ -324,8 +322,10 @@ class SpellApp:
                 spell['condition'] == condition and
                 spell['concentration'] == concentration and
                 spell['ritual'] == ritual):
-                return spell['name']
-        return None
+                matching_spells.append(spell['name'])
+        
+        return ' | '.join(matching_spells) if matching_spells else None
+
 if __name__ == "__main__":
     root = tk.Tk()
     app = SpellApp(root)
