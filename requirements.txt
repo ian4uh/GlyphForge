@@ -1,4 +1,4 @@
-asttokens==2.4.1
+asttokens==3.0.0
 attrs==24.2.0
 backcall==0.2.0
 beautifulsoup4==4.12.3
@@ -24,10 +24,10 @@ jupyter_core==5.7.2
 jupyterlab_pygments==0.3.0
 kiwisolver==1.4.7
 MarkupSafe==3.0.2
-matplotlib==3.9.2
+matplotlib==3.9.3
 matplotlib-inline==0.1.7
 mistune==3.0.2
-nbclient==0.10.0
+nbclient==0.10.1
 nbconvert==7.16.4
 nbformat==5.10.4
 numpy==2.1.3
