@@ -123,6 +123,21 @@ class SpellApp:
         ttk.Label(bottom_frame, text="Select Line Type:").grid(row=0, column=3)
         lineType_dropdown = ttk.Combobox(bottom_frame, textvariable=self.lineType_var, values=["Straight", "Centre Circle"])
         lineType_dropdown.grid(row=1, column=3, padx=5)
+
+
+        # Set default values
+        self.level_var.set("None")
+        self.school_var.set("None")
+        self.duration_var.set("Instantaneous")
+        self.range_var.set("None")
+        self.area_var.set("None")
+        self.dtype_var.set("None")
+        self.condition_var.set("None")
+        self.concentration_var.set("No")
+        self.ritual_var.set("No")
+        self.shape_var.set("Polygon")
+        self.lineType_var.set("Straight")
+
         
     def load_attributes(self, filename):
         with open(filename, "r") as f:
@@ -262,6 +277,25 @@ class SpellApp:
             shape = bases.polygon
         if lineType == line_shapes.straight and (shape == bases.quadratic or shape == bases.cubic):
             shape = bases.polygon
+
+        # Update dropdown values to match random selections
+        self.level_var.set(level)
+        self.school_var.set(school)
+        self.duration_var.set(duration)
+        self.range_var.set(rang)
+        self.area_var.set(area)
+        self.dtype_var.set(dtype)
+        self.condition_var.set(condition)
+        self.concentration_var.set("Yes" if concentration else "No")
+        self.ritual_var.set("Yes" if ritual else "No")
+        self.shape_var.set({
+            bases.polygon: "Polygon",
+            bases.quadratic: "Quadratic", 
+            bases.circle: "Circle",
+            bases.cubic: "Cubic",
+            bases.golden: "Golden"
+        }[shape])
+        self.lineType_var.set("Centre Circle" if lineType == line_shapes.centre_circle else "Straight")
 
         # Convert the level to lowercase in case of "None"
         level = level.lower()
