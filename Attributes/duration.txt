@@ -7,8 +7,8 @@ Instantaneous
 24 hours
 30 days
 7 days
-8 hours
 6 hours
+8 hours
 Special
 Until dispelled
 Up to 1 hour
