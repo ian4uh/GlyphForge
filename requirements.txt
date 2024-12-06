@@ -11,8 +11,8 @@ decorator==5.1.1
 defusedxml==0.7.1
 docopt==0.6.2
 executing==2.1.0
-fastjsonschema==2.21.0
-fonttools==4.55.0
+fastjsonschema==2.21.1
+fonttools==4.55.2
 idna==3.10
 ipython==8.12.3
 jedi==0.19.2
@@ -48,8 +48,8 @@ python-dateutil==2.9.0.post0
 pyzmq==26.2.0
 referencing==0.35.1
 requests==2.32.3
-rpds-py==0.21.0
-six==1.16.0
+rpds-py==0.22.3
+six==1.17.0
 soupsieve==2.6
 stack-data==0.6.3
 tinycss2==1.4.0
