@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 from PIL import Image, ImageTk
 import numpy as np
-import GlpyhEngine.writer as writer
-import GlpyhEngine.bases as bases
-import GlpyhEngine.line_shapes as line_shapes
+import GlyphEngine.writer as writer
+import GlyphEngine.bases as bases
+import GlyphEngine.line_shapes as line_shapes
 import random
 import json
 

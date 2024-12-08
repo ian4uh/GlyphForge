@@ -1,5 +1,5 @@
-import GlpyhEngine.bases as bases
-import GlpyhEngine.line_shapes as line_shapes
+import GlyphEngine.bases as bases
+import GlyphEngine.line_shapes as line_shapes
 import numpy as np
 import matplotlib.pyplot as plt
 import os
