@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import filedialog
 import matplotlib.pyplot as plt
 from io import BytesIO
 from PIL import Image, ImageTk
@@ -14,6 +15,7 @@ class SpellApp:
     def __init__(self, master):
         self.master = master
         self.master.title("Spell Generator")
+        self.current_image = None
 
         # Load attributes
         self.levels = self.load_attributes("attributes/levels.txt")
@@ -40,6 +42,10 @@ class SpellApp:
         # Button to randomly generate spell
         self.random_button = tk.Button(button_frame, text="Random Spell", command=self.random_spell)
         self.random_button.pack(side=tk.LEFT, padx=5)
+
+        # Button to download the image
+        self.download_button = tk.Button(button_frame, text="Download Glyph", command=self.download_image)
+        self.download_button.pack(side=tk.LEFT, padx=5)
 
         # Label to display the image
         self.image_label = tk.Label(master)
@@ -324,7 +330,9 @@ class SpellApp:
         image = Image.open(buf)
         photo = ImageTk.PhotoImage(image)
         self.image_label.config(image=photo)
-        self.image_label.image = photo  # Keep a reference to avoid garbage collection
+        self.image_label.image = photo
+        self.current_image = image  # Store current image for download
+
 
     def find_matching_spell(self, level, rang, area, dtype, school, duration, condition, concentration, ritual):
         level_files = {
@@ -359,6 +367,18 @@ class SpellApp:
                 matching_spells.append(spell['name'])
         
         return ' | '.join(matching_spells) if matching_spells else None
+
+    def download_image(self):
+        if self.current_image:
+            filename = filedialog.asksaveasfilename(
+                initialfile="glyph",  # Set default filename
+                defaultextension=".png",
+                filetypes=[("PNG files", "*.png"), ("All files", "*.*")]
+            )
+            if filename:
+                self.current_image.save(filename)
+
+
 
 if __name__ == "__main__":
     root = tk.Tk()
