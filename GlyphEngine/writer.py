@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 from tqdm.auto import tqdm
+import json
 
 cmap = plt.get_cmap('turbo')
 
@@ -148,13 +149,15 @@ def draw_spell(level, rang, area, dtype, school, duration, condition,
     plt.clf()  # Clear the figure before drawing new glyph
 
     # Load attributes
-    ranges = load_attribute("Attributes/range.txt")
-    levels = load_attribute("Attributes/levels.txt")
-    area_types = load_attribute("Attributes/area_types.txt")
-    dtypes = load_attribute("Attributes/damage_types.txt")
-    schools = load_attribute("Attributes/school.txt")
-    durations = load_attribute("Attributes/duration.txt")
-    conditions = load_attribute("Attributes/conditions.txt")
+    with open("GlyphEngine/attributes.json", "r") as f:
+        attributes = json.load(f)
+        ranges = attributes["ranges"]
+        levels = attributes["levels"]
+        area_types = attributes["area_types"]
+        dtypes = attributes["damage_types"]
+        schools = attributes["schools"]
+        durations = attributes["durations"]
+        conditions = attributes["conditions"]
     
     # Find indices for the attributes and uses lowercases values
     i_range = [r.lower() for r in ranges].index(rang.lower())
@@ -224,4 +227,3 @@ def draw_spell(level, rang, area, dtype, school, duration, condition,
 
     plt.savefig(savename, transparent=False, bbox_inches='tight')
     plt.clf()
-

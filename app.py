@@ -18,13 +18,15 @@ class SpellApp:
         self.current_image = None
 
         # Load attributes
-        self.levels = self.load_attributes("attributes/levels.txt")
-        self.schools = self.load_attributes("attributes/school.txt")
-        self.durations = self.load_attributes("attributes/duration.txt")
-        self.ranges = self.load_attributes("attributes/range.txt")
-        self.areas = self.load_attributes("attributes/area_types.txt")
-        self.dtypes = self.load_attributes("attributes/damage_types.txt")
-        self.conditions = self.load_attributes("attributes/conditions.txt")
+        with open("GlyphEngine/attributes.json", "r") as f:
+            attributes = json.load(f)
+            self.levels = attributes["levels"]
+            self.schools = attributes["schools"] 
+            self.durations = attributes["durations"]
+            self.ranges = attributes["ranges"]
+            self.areas = attributes["area_types"]
+            self.dtypes = attributes["damage_types"]
+            self.conditions = attributes["conditions"]
          
 
 
@@ -54,6 +56,7 @@ class SpellApp:
         # Create label for spell name
         self.spell_name_label = tk.Label(master, text="")
         self.spell_name_label.pack()
+
 
 
     def create_dropdowns(self):
@@ -240,7 +243,6 @@ class SpellApp:
 
         # Display the image
         self.display_image(image)
-
     def random_spell(self):
         # Generate a random spell
         with open('attributes/levels.txt', 'r') as f:
