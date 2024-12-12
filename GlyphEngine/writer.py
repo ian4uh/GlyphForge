@@ -169,13 +169,13 @@ def draw_spell(level, rang, area, dtype, school, duration, condition,
     i_condition = [ct.lower() for ct in conditions].index(condition.lower())
 
     # Always include all attributes in consistent order
-    attributes = [i_levels, i_school, i_duration, i_range, i_area, i_dtype, i_condition]
+    attributes = [i_levels, i_school, i_dtype, i_range, i_area, i_duration, i_condition]
     labels = [f"Level: {level}", 
              f"School: {school}", 
-             f"Duration: {duration}", 
+             f"Damage Type: {dtype}",
              f"Range: {rang}", 
              f"Area Type: {area}", 
-             f"Damage Type: {dtype}",
+             f"Duration: {duration}", 
              f"Condition: {condition}"]
     N = 2 * len(attributes) + 1
     
